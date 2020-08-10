@@ -87,13 +87,13 @@ _The **Escape From NYC** MVP is to create a full CRUD database._
 
 - Mobile User Page / Create An Account
 
-[Click Here](ttps://wireframe.cc/Vk7cUn)
+[Click Here](https://wireframe.cc/Vk7cUn)
 
 - Mobile Create A New Trail
 
 #### Component Tree
 
-![Click Here](https://drive.google.com/file/d/1uV4vhjnUoIYGKOfai6Wk2EAj-yoWmrIZ/view?usp=sharing)
+[Click Here](https://drive.google.com/file/d/1uV4vhjnUoIYGKOfai6Wk2EAj-yoWmrIZ/view?usp=sharing)
 
 #### Component Hierarchy
 
