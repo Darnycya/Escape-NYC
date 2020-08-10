@@ -63,31 +63,31 @@ _The **Escape From NYC** MVP is to create a full CRUD database._
 
 - Desktop Home / Index 
 
-![Click Here](https://wireframe.cc/rf9vuH)
+[Click Here](https://wireframe.cc/rf9vuH)
 
 - Desktop Hill Page / Log In
 
-![Click Here](https://wireframe.cc/F3j1jd)
+[Click Here](https://wireframe.cc/F3j1jd)
 
 - Desktop User Page / Create An Account
 
-![Click Here](https://wireframe.cc/HKMvpv)
+[Click Here](https://wireframe.cc/HKMvpv)
 
 - Desktop Create A New Trail
 
-![Click Here](https://wireframe.cc/Pey0V0)
+[Click Here](https://wireframe.cc/Pey0V0)
 
 - Mobile Home / Index
 
-![Click Here](https://wireframe.cc/qPvs1O)
+[Click Here](https://wireframe.cc/qPvs1O)
 
 - Mobile Hill Page / Log In
 
-![Click Here](https://wireframe.cc/JRhUCS)
+[Click Here](https://wireframe.cc/JRhUCS)
 
 - Mobile User Page / Create An Account
 
-![Click Here](ttps://wireframe.cc/Vk7cUn)
+[Click Here](ttps://wireframe.cc/Vk7cUn)
 
 - Mobile Create A New Trail
 
@@ -138,7 +138,7 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
+
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
@@ -174,7 +174,7 @@ src
 
 #### ERD Model
 
-![Click Here](https://drive.google.com/file/d/1aMZXlD2ze2R-obvpDMFava6SvLVG0Ktb/view?usp=sharing)
+[Click Here](https://drive.google.com/file/d/1aMZXlD2ze2R-obvpDMFava6SvLVG0Ktb/view?usp=sharing)
 
 
 <br>
