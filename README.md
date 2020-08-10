@@ -20,14 +20,14 @@
 
 ## Overview
 
-_**Escape From NYC** is a web application that will allow users to submit hiking trails that they have found to help encourage New Yorkers to leave the city and get some fresh air during quarantine. Users can submit multiple trails, uploading a scenic view of the hike, the distance in miles from NYC and it's difficulty rated from easy, moderate, and hard. Users can also comment on different hikes on the website._
+_**Escape NYC** is a web application that will allow users to submit hiking trails that they have found to help encourage New Yorkers to leave the city and get some fresh air during quarantine. Users can submit multiple trails, uploading a scenic view of the hike, the distance in miles from NYC and it's difficulty rated from easy, moderate, and hard. Users can also comment on different hikes on the website._
 
 
 <br>
 
 ## MVP
 
-_The **Escape From NYC** MVP is to create a full CRUD database._
+_The **Escape NYC** MVP is to create a full CRUD database._
 
 <br>
 
