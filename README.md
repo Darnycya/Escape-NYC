@@ -20,14 +20,14 @@
 
 ## Overview
 
-_**Escape From NYC** is a web application that will allow users to submit hiking trails. It shows the distane in miles from NYC to encourage New Yorkers to leave the city and get some fresh air. Users can submit multiple trails uploading a scenic view of the hike and it's difficulty rated from easy, moderate, and hard. Users can also comment on different hikes on the website._
+_**Escape NYC** is a web application that will allow users to submit hiking trails. It shows the distane in miles from NYC to encourage New Yorkers to leave the city and get some fresh air. Users can submit multiple trails uploading a scenic view of the hike and it's difficulty rated from easy, moderate, and hard. Users can also comment on different hikes on the website._
 
 
 <br>
 
 ## MVP
 
-_The **Escape From NYC** MVP is to create a full CRUD database._
+_The **Escape NYC** MVP is to create a full CRUD database._
 
 <br>
 
@@ -87,13 +87,13 @@ _The **Escape From NYC** MVP is to create a full CRUD database._
 
 - Mobile User Page / Create An Account
 
-[Click Here](ttps://wireframe.cc/Vk7cUn)
+[Click Here](https://wireframe.cc/Vk7cUn)
 
 - Mobile Create A New Trail
 
 #### Component Tree
 
-![Click Here](https://drive.google.com/file/d/1uV4vhjnUoIYGKOfai6Wk2EAj-yoWmrIZ/view?usp=sharing)
+[Click Here](https://drive.google.com/file/d/1uV4vhjnUoIYGKOfai6Wk2EAj-yoWmrIZ/view?usp=sharing)
 
 #### Component Hierarchy
 
