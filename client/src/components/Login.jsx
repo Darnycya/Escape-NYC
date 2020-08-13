@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { loginUser } from '../services/auth'
 
 
 export default function Login(props) {
@@ -16,8 +17,15 @@ export default function Login(props) {
     })
 }
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const userData = await loginUser(formData);
+    props.setCurrentUser(userData)
+    props.history.push('/')
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h3>Login</h3>
       <label>
         Email:
