@@ -1,13 +1,13 @@
-import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
-import { loginUser } from '../services/auth'
+import React, { useState } from 'react'
+import {registerUser} from '../services/auth'
 
 
-
-export default function Login(props) {
+export default function CreateAccount(props) {
   const [formData, setFormData] = useState({
+    name: "",
     email: "",
-    password: ""
+    password: "",
+    user_image: "",
   })
 
   const handleChange = (e) => {
@@ -20,14 +20,23 @@ export default function Login(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const userData = await loginUser(formData);
-    props.setCurrentUser(userData)
-    props.history.push('/')
+    const userData = await registerUser(formData);
+    props.setCurrentUser(userData);
+    props.history.push('/');
   }
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3>Login</h3>
+      <h3>Create An Account</h3>
+      <label>
+        Name:
+      <input
+        type="text"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+      />
+      </label>
       <label>
         Email:
       <input
@@ -46,7 +55,15 @@ export default function Login(props) {
         onChange={handleChange}
       />
       </label>
-      <Link to='/create-account'>Create An Account</Link>
+      <label>
+        Photo:
+      <input
+        type="url"
+        name="user_image"
+        value={formData.user_image}
+        onChange={handleChange}
+      />
+      </label>
       <button>Submit</button>
     </form>
   )
