@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
-import { loginUser } from '../services/auth'
+import { loginUser } from '../../services/auth'
 
 
 
@@ -22,7 +22,7 @@ export default function Login(props) {
     e.preventDefault();
     const userData = await loginUser(formData);
     props.setCurrentUser(userData)
-    props.history.push('/')
+    props.history.push('/trails')
   }
 
   return (

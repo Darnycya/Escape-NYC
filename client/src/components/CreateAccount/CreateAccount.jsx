@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {registerUser} from '../services/auth'
+import {registerUser} from '../../services/auth'
 
 
 export default function CreateAccount(props) {
@@ -22,7 +22,7 @@ export default function CreateAccount(props) {
     e.preventDefault();
     const userData = await registerUser(formData);
     props.setCurrentUser(userData);
-    props.history.push('/');
+    props.history.push('/trails');
   }
 
   return (

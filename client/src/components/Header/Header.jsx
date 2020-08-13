@@ -22,12 +22,20 @@ export default function Header(props) {
       {
         props.currentUser ? (
           <>
-            <img src={props.currentUser.user_image}/>
+            <img class ="avatar" src={props.currentUser.user_image}/>
             <button onClick={handleLogout}>Logout</button>
           </>
         ) : (
             <Link to='/login'>Login/Register</Link>
 )
+      }
+
+      {
+        props.currentUser && (
+          <>
+            {/* At 03:00 he starts talking about how to show certain things when logged in. */}
+            </>
+        )
       }
       
       

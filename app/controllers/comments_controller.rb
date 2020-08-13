@@ -3,11 +3,14 @@ class CommentsController < ApplicationController
 
   # GET /comments
   def index
-    @trail = Trail.find(params[:trail_id])
-    @comments = Comment.where(trail_id: @trail_id)
+    @comments = Comment.all
+
+    render json: @comments
+    # @trail = Trail.find(params[:trail_id])
+    # @comments = Comment.where(trail_id: @trail_id)
 
 
-    render json: @comments, include: :trail
+    # render json: @comments, include: :trail
   end
 
   # GET /comments/1
