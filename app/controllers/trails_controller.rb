@@ -1,22 +1,23 @@
 class TrailsController < ApplicationController
   before_action :set_trail, only: [:show, :update, :destroy]
+  # before_action :authorize_request, only: [:create, :update, :destroy, :add_comment]
 
   # GET /trails
   def index
-    @user = User.find(params[:user_id])
-    @trails = Trail.where(user_id: @user.id)
+    @trails = Trail.all
 
-    render json: @trails, include: :user
+    render json: @trails
   end
 
   # GET /trails/1
   def show
-    render json: @trail
+    render json: @trail, include: :comments
   end
 
   # POST /trails
   def create
     @trail = Trail.new(trail_params)
+
 
     if @trail.save
       render json: @trail, status: :created, location: @trail
@@ -57,6 +58,15 @@ class TrailsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def trail_params
-      params.require(:trail).permit(:name, :difficulty, :travel_time_from_NYC, :length, :trail_image, :user_id)
+      params.require(:trail).permit(:name, :difficulty, :travel_time_from_NYC, :length, :trail_image)
     end
 end
+
+
+
+# def index
+#   @user = User.find(params[:user_id])
+#   @trails = Trail.where(user_id: @user.id)
+
+#   render json: @trails, include: :user
+# end

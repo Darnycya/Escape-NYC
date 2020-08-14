@@ -1,0 +1,23 @@
+h1 {
+  font-size: 40px;
+  display: inline;
+  text-align: left;
+  padding-right: 75%;
+}
+
+header {
+  background-color: white;
+  display: block;
+  box-shadow: 0px 0px 10px 0px;
+
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+}
+link {
+  display: inline;
+}
