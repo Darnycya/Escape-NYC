@@ -7,6 +7,7 @@ import { readAllTrails } from '../services/trails'
 import CreateTrail from './CreateTrail/CreateTrail'
 import TrailDetail from './TrailDetail/TrailDetail'
 import { readAllComments } from '../services/comments'
+import HomePage from '../screens/HomePage/HomePage'
 
 
 export default function Main(props) {
@@ -34,6 +35,10 @@ export default function Main(props) {
 
   return (
     <main>
+      <Route exact path='/' render={() => (
+        <HomePage
+        />
+      )} />
       <Route path='/login' render={(props) => (
         <Login
           {...props}

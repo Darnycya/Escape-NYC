@@ -29,6 +29,7 @@ export default function TrailDetail(props) {
           <p>{trail.travel_time_from_NYC} minutes</p>
           </>
       )}
+      <button>Update Trail</button> 
       <button>Delete Trail</button> 
       <h3>Comments:</h3>
       {props.comments.map((comment) => (
