@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import { loginUser } from '../../services/auth'
+import './Login.css'
 
 
 
@@ -26,7 +27,8 @@ export default function Login(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div class="login-background">
+      <div class="login"><form onSubmit={handleSubmit}>
       <h3>Login</h3>
       <label>
         Email:
@@ -46,8 +48,11 @@ export default function Login(props) {
         onChange={handleChange}
       />
       </label>
-      <Link to='/create-account'>Create An Account</Link>
       <button>Submit</button>
-    </form>
+      </form>
+      </div>
+    
+      <Link to='/create-account'><p class="link">Create An Account</p></Link></div>
+      
   )
 }

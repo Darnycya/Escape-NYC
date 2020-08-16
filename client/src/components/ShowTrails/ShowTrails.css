@@ -1,5 +1,12 @@
-.cards {
-  display: flex;
+.card {
+  
+  border-color: black;
+  border-style: solid;
+  margin-bottom: 10px;
+  width: 1200px;
+  border-radius: 5%;
+  margin-left: 18%;
+  box-shadow: 0px 2px;
 }
 
 ul {
