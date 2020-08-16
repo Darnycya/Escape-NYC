@@ -19,7 +19,7 @@ export default function TrailDetail(props) {
   
   
   return (
-    <div>
+    <div class="details">
       {trail && ( 
         <>
         <h3>{trail.name}</h3>
@@ -44,5 +44,6 @@ export default function TrailDetail(props) {
       <input type="text"></input><button>Add A Comment </button>
       
     </div>
+    
   )
 }

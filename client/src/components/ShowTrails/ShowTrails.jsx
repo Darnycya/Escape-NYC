@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './ShowTrails.css'
+import Search from '../Search/Search'
 
 export default function ShowTrails(props) {
   return (
+    <>
+    <Search />
     <div>
       <h3>Trails</h3>
       {props.trails.map((trail) => (
@@ -20,5 +23,6 @@ export default function ShowTrails(props) {
       <Link to='/trails/new'><button>Create A Trail</button></Link>
        
       </div>
+      </>
   )
 }

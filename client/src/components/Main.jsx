@@ -8,6 +8,7 @@ import CreateTrail from './CreateTrail/CreateTrail'
 import TrailDetail from './TrailDetail/TrailDetail'
 import { readAllComments } from '../services/comments'
 import HomePage from '../screens/HomePage/HomePage'
+import SearchResults from '../screens/HomePage/HomePage'
 
 
 export default function Main(props) {
@@ -56,19 +57,23 @@ export default function Main(props) {
           trails={trails}
         />
       )} />
-        <Route path='/trails/new' render={(props) => (
+        <Route exact path='/trails/new' render={(props) => (
         <CreateTrail
         {...props}
           setTrails={setTrails}
           trails={trails}
         />
       )} />
-      <Route path='/trails/:id' render={(props) => (
+      <Route exact path='/trails/:id' render={(props) => (
         <TrailDetail
           {...props}
           comments={comments}
         />
       )} />
+
+      <Route exact path='/trails/search:type'>
+        <SearchResults />
+      </Route>
         
      
     </main>

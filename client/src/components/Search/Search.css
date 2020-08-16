@@ -1,0 +1,22 @@
+.search {
+  margin-top: -400px;
+  margin-left: 33%;
+  
+}
+
+
+.search-input {
+  font-size:25px;
+  display: inline-block;
+  width: 600px;
+}
+
+.search-bar {
+  display: inline-block;
+}
+
+.mag {
+  width:30px;
+  height:30px;
+  
+}
