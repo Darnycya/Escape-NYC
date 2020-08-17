@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { readOneTrail } from '../../services/trails'
-import Comments from '../Comments/Comments'
 import './TrailDetail.css'
 
 
@@ -21,29 +20,26 @@ export default function TrailDetail(props) {
   
   
   return (
-    <div class="details">
+    <div>
       {trail && ( 
         <>
         <h4>{trail.name}</h4>
-        <img class="trail_image_big" src={trail.trail_image}></img>
-          <p>{trail.name}</p>
-          <p>{trail.difficulty}</p>
-          <p>{trail.travel_time_from_NYC} minutes</p>
-          </>
+          <div class='left'>
+            <img class="trail_image_big" src={trail.trail_image}></img></div>
+          <div class="right">
+          <p class="info2"><b>Created by:</b> User Avatar and Name</p>
+            <p class="info2"><b>Difficulty:</b> {trail.difficulty}</p>
+            <p class="info2"><b>Length (from top to bottom):</b> {trail.length} miles</p>
+            <p class="info2"><b>Travel Time From NYC:</b> {trail.travel_time_from_NYC} minutes</p>
+            <button className="update-button">Update Trail</button> 
+            <button className="delete-button">Delete Trail</button> </div>
+            
+        </>
+        
       )} 
-      <button>Update Trail</button> 
-      <button>Delete Trail</button> 
     </div>
+    
+    
     
   )
 }
-
-// {trail && ( 
-//   <>
-//   <h3>{trail.name}</h3>
-//   <img class="trail_image_big" src={trail.trail_image}></img>
-//     <p>{trail.name}</p>
-//     <p>{trail.difficulty}</p>
-//     <p>{trail.travel_time_from_NYC} minutes</p>
-//     </>
-// )}

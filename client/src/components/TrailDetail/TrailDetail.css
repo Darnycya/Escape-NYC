@@ -1,12 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 .trail_image_big {
-  margin-left: 18%;
-  width: 1150px;
+  width: 700px;
+  height: 300px;
+  border-style: solid;
 }
 
 h4 {
   font-size: 50px;
   text-align: center;
   font-family: 'Gloria Hallelujah', cursive;
+}
+
+.details {
+ 
+}
+
+.left {
+
+width: 800px;
+display: inline-block;
+margin-left: 350px;
+
+}
+
+.right {
+  margin-left: 1150px;
+  margin-top: -270px;
+  
+  
+}
+
+
+.info2 {
+  font-size: 20px;
+}
+
+.delete-button {
+  margin-left: 50px;
+}
+
+.update-button {
+  margin-left: 50px;
 }

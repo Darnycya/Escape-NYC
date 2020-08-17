@@ -9,6 +9,8 @@ import TrailDetail from './TrailDetail/TrailDetail'
 import { readAllComments } from '../services/comments'
 import HomePage from '../screens/HomePage/HomePage'
 import SearchResults from '../screens/HomePage/HomePage'
+// import TrailDetailPage from '../screens/TrailDetailPage/TrailDetailPage'
+import Comments from './Comments/Comments'
 
 
 export default function Main(props) {
@@ -35,6 +37,7 @@ export default function Main(props) {
 
 
   return (
+    
     <main>
       <Route exact path='/' render={() => (
         <HomePage
@@ -65,17 +68,29 @@ export default function Main(props) {
         />
       )} />
       <Route exact path='/trails/:id' render={(props) => (
+      <>
         <TrailDetail
-          {...props}
-          comments={comments}
+        {...props}
+        comments={comments}
         />
+          <Comments
+            {...props}
+            comments={comments}
+            />
+            </>
+        
       )} />
 
       <Route exact path='/trails/search:type'>
         <SearchResults />
       </Route>
         
-     
+        
     </main>
+        
   )
 }
+
+// <TrailDetail
+//           {...props}
+//           comments={comments}
