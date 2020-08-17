@@ -49,10 +49,11 @@ export default function Login(props) {
         />
         </label>
         <button>Submit</button>
-        </form>
+      </form>
+      <Link to='/create-account'><p class="link">Create An Account</p></Link>
         </div>
       
-        <Link to='/create-account'><p class="link">Create An Account</p></Link></div>
+        </div>
       
   )
 }

@@ -22,12 +22,12 @@ h4 {
 
 width: 800px;
 display: inline-block;
-margin-left: 350px;
+margin-left: 100px;
 
 }
 
 .right {
-  margin-left: 1150px;
+  margin-left: 930px;
   margin-top: -270px;
   
   
@@ -47,8 +47,8 @@ margin-left: 350px;
 }
 
 .comment-header {
-  margin-top:150px;
-  margin-left:150px;
+  margin-top:50px;
+  margin-left:50px;
   
 }
 
@@ -58,4 +58,17 @@ margin-left: 350px;
 
 .comment-box {
   display: inline;
+}
+
+.trailDetail-page{
+  background-color: white;
+  width: 1400px;
+  margin-left: 270px;
+}
+
+.comment-here {
+  width: 400px;
+  margin-bottom: 100px;
+  margin-top: 75px;
+ margin-right: 10px;
 }

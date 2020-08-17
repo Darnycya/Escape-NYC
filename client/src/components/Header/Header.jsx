@@ -17,7 +17,7 @@ export default function Header(props) {
 
 
   return (
-    <header>
+    <div class="header">
       <Link class='logo-link' to='/trails'><h1>Escape NYC</h1></Link>
       {
         props.currentUser ? (
@@ -39,6 +39,6 @@ export default function Header(props) {
       }
       
       
-    </header>
+    </div>
   )
 }

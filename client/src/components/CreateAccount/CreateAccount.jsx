@@ -26,6 +26,7 @@ export default function CreateAccount(props) {
   }
 
   return (
+    <div class="login">
     <form onSubmit={handleSubmit}>
       <h3>Create An Account</h3>
       <label>
@@ -65,6 +66,7 @@ export default function CreateAccount(props) {
       />
       </label>
       <button>Submit</button>
-    </form>
+      </form>
+      </div>
   )
 }
