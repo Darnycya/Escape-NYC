@@ -28,31 +28,31 @@ export default function Login(props) {
 
   return (
     <div class="login-background">
-      <div class="login"><form onSubmit={handleSubmit}>
-      <h3>Login</h3>
+        <div class="login"><form onSubmit={handleSubmit}>
+        <h3>Login</h3>
+        <label>
+          Email:
+        <input
+          type="text"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+        </label>
       <label>
-        Email:
-      <input
-        type="text"
-        name="email"
-        value={formData.email}
-        onChange={handleChange}
-      />
-      </label>
-    <label>
-      Password:
-      <input
-        type="password"
-        name="password"
-        value={formData.password}
-        onChange={handleChange}
-      />
-      </label>
-      <button>Submit</button>
-      </form>
-      </div>
-    
-      <Link to='/create-account'><p class="link">Create An Account</p></Link></div>
+        Password:
+        <input
+          type="password"
+          name="password"
+          value={formData.password}
+          onChange={handleChange}
+        />
+        </label>
+        <button>Submit</button>
+        </form>
+        </div>
+      
+        <Link to='/create-account'><p class="link">Create An Account</p></Link></div>
       
   )
 }

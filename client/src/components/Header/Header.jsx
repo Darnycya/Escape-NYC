@@ -18,7 +18,7 @@ export default function Header(props) {
 
   return (
     <header>
-      <h1>Escape NYC</h1>
+      <Link class='logo-link' to='/trails'><h1>Escape NYC</h1></Link>
       {
         props.currentUser ? (
           <>

@@ -1,6 +1,4 @@
-.login-background {
-  background-color: teal;
-}
+
 
 .login {
   display: flex;
@@ -42,3 +40,4 @@ label{
   width: 250px;
   text-align: right;
 }
+

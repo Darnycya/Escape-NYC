@@ -7,7 +7,7 @@ function TrailDetailPage(props) {
   return (
     <div>
       <TrailDetail />
-      <Comments />
+     
       
     </div>
   )

@@ -1,43 +1,51 @@
-import React, { useState } from 'react';
-import { postTrail } from '../../services/trails'
+import React, { useState, useEffect } from 'react'
+import { putTrail } from '../../services/trails'
 import { Link } from 'react-router-dom'
 
-export default function CreateTrail(props) {
+export default function TrailEdit(props) {
   const [formData, setFormData] = useState({
     name: "",
     difficulty: "",
     travel_time_from_NYC: "",
     length: "",
     trail_image: "",
-
   })
+
+  useEffect(() => {
+    defaultFormData()
+  }, [props.trails])
+
+  const defaultFormData = () => {
+
+    const trailItem = props.trails.find((trail) => {
+      return trail.id === parseInt(props.match.params.id)
+    })
+    if (trailItem) {
+      setFormData({ name: trailItem.name })
+    }
+  }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    })
-}
+    setFormData({ ...formData,
+      [name]: value })
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const newTrail = await postTrail(formData);
-    props.setTrails([
-      ...props.trails,
-      newTrail
-    ])
-    props.history.push('/trails');
+    const {id} = props.match.params;
+    const newTrail = await putTrail(id, formData);
+    props.setTrails(
+      props.trails.map((trailItem) => {
+        return trailItem.id === parseInt(id) ? newTrail : trailItem
+      })
+    )
+    props.history.push('/trails')
   }
 
-
-
-
-
-
   return (
-    <div class="login"><form onSubmit={handleSubmit}>
-      <h3>Create A Trail</h3>
+    <form class="login" onSubmit={handleSubmit}>
+      <h3>Edit Trail</h3>
       <label>
         Name:
       <input
@@ -83,8 +91,7 @@ export default function CreateTrail(props) {
         onChange={handleChange}
       />
       </label>
-      <Link to="/trails"><button class="create-trail-button">Submit</button></Link>
+      <Link to="/trails/"><button class="edit-trail-button">Submit</button></Link>
     </form>
-    </div>
   )
 }

@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Monoton&display=swap');
 
+body {
+  background: url(https://images.unsplash.com/photo-1486728297118-82a07bc48a28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80) no-repeat center center fixed;
+  background-size: cover;
+}
 
-
+.box {
+  background-color: rgb(252, 249, 249);
+  width: 900px;
+}
 
 h2 {
   font-size: 30px;
@@ -10,8 +18,12 @@ h2 {
 
 .info {
   width: 1100px;
-  margin-left: 20%;
-
+  margin-left: 21%;
+  background-color: rgb(252, 249, 249,0.5);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rosybrown;
+  margin-top: -100px;
 }
 
 .slide {
@@ -19,7 +31,22 @@ h2 {
   padding: 20px;
 }
 
-.center {
-  margin-left: 48%;
+.enter {
+  margin-left: 50%;
+  background:white;
+  width: 180px;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 10px;
   
+}
+
+
+.enter-button {
+  text-align: center;
+}
+
+.home {
+font-size: 100px;
+  text-align: center;
+   font-family: 'Monoton', cursive;
 }

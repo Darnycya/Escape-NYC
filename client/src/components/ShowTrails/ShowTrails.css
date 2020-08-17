@@ -1,29 +1,40 @@
 .card {
-  
-  border-color: black;
-  border-style: solid;
-  margin-bottom: 10px;
-  width: 1200px;
-  border-radius: 5%;
-  margin-left: 18%;
-  box-shadow: 0px 2px;
+  display: inline-table;
+  margin-left: 100px;
 }
 
-ul {
-  display: flex;
-  justify-content: space-evenly; 
+.circles {
+  align-content: center;
+  width: 250px;
+  border-radius: 50%;  
+  
 }
+
 
 
 .trail_image {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
   
 }
 
-p {
-  text-align: left;
+.text-name {
+  border-color: black;
+  border-style: solid;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
 } 
+
+.new-trail {
+  margin-left: 48%;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
 
 
 

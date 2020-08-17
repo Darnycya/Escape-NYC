@@ -11,6 +11,9 @@ import HomePage from '../screens/HomePage/HomePage'
 import SearchResults from '../screens/HomePage/HomePage'
 // import TrailDetailPage from '../screens/TrailDetailPage/TrailDetailPage'
 import Comments from './Comments/Comments'
+import TrailEditPage from '../screens/TrailEditPage/TrailEditPage'
+import TrailEdit from '../components/TrailEdit/TrailEdit'
+import Layout from '../components/Layout/Layout'
 
 
 export default function Main(props) {
@@ -56,34 +59,55 @@ export default function Main(props) {
         />
       )} />
       <Route exact path='/trails' render={() => (
+       <>
+        <Layout />
         <ShowTrails
           trails={trails}
-        />
+          />
+          </>
       )} />
-        <Route exact path='/trails/new' render={(props) => (
+          
+        <Route exact path='/new-trail' render={(props) => (
+        <>
+          <Layout />
         <CreateTrail
         {...props}
           setTrails={setTrails}
           trails={trails}
-        />
+          />
+          </>
       )} />
       <Route exact path='/trails/:id' render={(props) => (
-      <>
+        <>
+          <Layout />
         <TrailDetail
-        {...props}
-        comments={comments}
-        />
-          <Comments
             {...props}
+            trails ={trails}
             comments={comments}
-            />
-            </>
-        
+          />
+          </>
       )} />
 
       <Route exact path='/trails/search:type'>
-        <SearchResults />
+        <>
+        <Layout />
+          <SearchResults />
+          </>
       </Route>
+
+      <Route exact path='/trails/:id/update' render={(props) => (
+        <>
+          <Layout />
+        <TrailEdit
+          {...props}
+          trails={trails}
+          setTrails={setTrails}
+          />
+          </>
+      )} />
+      
+
+      
         
         
     </main>

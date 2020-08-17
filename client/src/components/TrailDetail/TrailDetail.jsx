@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { readOneTrail } from '../../services/trails'
+import { Link } from 'react-router-dom'
+import { destroyTrail} from '../../services/trails'
 import './TrailDetail.css'
 
 
@@ -18,6 +20,12 @@ export default function TrailDetail(props) {
     setTrail(trailDetail)
   }
   
+  const handleClick = async (id) => {
+    await destroyTrail(id);
+    props.setTrails(props.trails.filter((trail) => {
+      return trail.id !== id
+    }))
+  }
   
   return (
     <div>
@@ -31,15 +39,32 @@ export default function TrailDetail(props) {
             <p class="info2"><b>Difficulty:</b> {trail.difficulty}</p>
             <p class="info2"><b>Length (from top to bottom):</b> {trail.length} miles</p>
             <p class="info2"><b>Travel Time From NYC:</b> {trail.travel_time_from_NYC} minutes</p>
-            <button className="update-button">Update Trail</button> 
-            <button className="delete-button">Delete Trail</button> </div>
-            
+            <Link to='/trails/:id/update'><button className="update-button">Update Trail</button></Link>
+            <button onClick={() => handleClick(trail.id)} className="delete-button">Delete Trail</button> </div>
+            <div class="comment-header">
+      <p class="comments-header">Comments:</p>
+      {props.comments.map((comment) => (
+        <div class="comment-box">
+          <img class="user_image" src="https://pbs.twimg.com/media/DjburCIUUAIDrXt.jpg"></img>
+          <p><b>User Name: </b></p>
+            <p>{comment.comment}</p>
+        </div>
+      ))
+      }
+      <input type="text"></input><button>Add A Comment </button>
+      </div>
         </>
+        
         
       )} 
     </div>
     
     
     
+    
   )
 }
+
+
+// <img class="user_image" src={comment.user_id.user_image}></img>
+//           <p>{comment.user_id.name}</p>

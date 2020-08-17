@@ -12,8 +12,10 @@ h4 {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-.details {
- 
+.user_image {
+ border-radius: 50%;
+ width: 50px;
+ height: 50px;
 }
 
 .left {
@@ -42,4 +44,18 @@ margin-left: 350px;
 
 .update-button {
   margin-left: 50px;
+}
+
+.comment-header {
+  margin-top:150px;
+  margin-left:150px;
+  
+}
+
+.comments-header {
+  font-size: 25px;
+}
+
+.comment-box {
+  display: inline;
 }
