@@ -48,7 +48,6 @@ function Search(props) {
             type="text"
             autoFocus
         />
-        <img type="submit" value="search" class="mag" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGACFFrgDLSNRkZ3yBsvvAotZU3eYiATXIMg&usqp=CAU" />
       </form>
       </div>
        

@@ -45,6 +45,9 @@ label{
 .submit-button {
   width: 100px;
   margin-left: 150px;
+  background:white;
+  border-radius: 5px;
+  margin-top: 10px;
 
 }
 

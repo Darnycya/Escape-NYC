@@ -23,7 +23,7 @@ export default function ShowTrails(props) {
       
        
       </div>
-      <Link to='/new-trail'><button class="new-trail">Create A Trail</button></Link>
+      <Link to='/new-trail'><button class="new-trail"><p class="new-trail-text">Create A Trail</p></button></Link>
       </>
   )
 }
