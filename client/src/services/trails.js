@@ -11,7 +11,7 @@ export const readOneTrail = async (id) => {
 }
 
 export const postTrail = async (trailData) => {
-  const resp = await api.post('/trails', { trail: trailData });
+  const resp = await api.post(`/trails`, { trail: trailData });
   return resp.data;
 }
 

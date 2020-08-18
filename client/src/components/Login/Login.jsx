@@ -48,7 +48,7 @@ export default function Login(props) {
           onChange={handleChange}
         />
         </label>
-        <button>Submit</button>
+        <button className="submit-button">Submit</button>
       </form>
       <Link to='/create-account'><p class="link">Create An Account</p></Link>
         </div>

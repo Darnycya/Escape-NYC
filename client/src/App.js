@@ -22,7 +22,8 @@ function App() {
     <div className="App">
       
       <Main
-        setCurrentUser={setCurrentUser}/>
+        setCurrentUser={setCurrentUser}
+        currentUser={currentUser}/>
     </div>
   );
 }

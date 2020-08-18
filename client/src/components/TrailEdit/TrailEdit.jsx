@@ -21,7 +21,14 @@ export default function TrailEdit(props) {
       return trail.id === parseInt(props.match.params.id)
     })
     if (trailItem) {
-      setFormData({ name: trailItem.name })
+      setFormData({
+        name: trailItem.name,
+        difficulty: trailItem.difficulty,
+        travel_time_from_NYC: trailItem.travel_time_from_NYC,
+        length: trailItem.length,
+        trail_image: trailItem.trail_image,
+        
+      })
     }
   }
 
@@ -91,7 +98,7 @@ export default function TrailEdit(props) {
         onChange={handleChange}
       />
       </label>
-      <Link to="/trails/"><button class="edit-trail-button">Submit</button></Link>
+      <button class="edit-trail-button">Submit</button>
     </form>
   )
 }

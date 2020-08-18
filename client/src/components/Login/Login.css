@@ -25,7 +25,8 @@ form {
 }
 
 .link {
-  padding-bottom: 10px; 
+  padding-bottom: 20px; 
+  margin-top: -10px;
   
 }
 
@@ -39,5 +40,11 @@ label{
   clear: left;
   width: 250px;
   text-align: right;
+}
+
+.submit-button {
+  width: 100px;
+  margin-left: 150px;
+
 }
 

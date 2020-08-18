@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { postTrail } from '../../services/trails'
-import { Link } from 'react-router-dom'
+
 
 export default function CreateTrail(props) {
   const [formData, setFormData] = useState({
@@ -20,9 +20,9 @@ export default function CreateTrail(props) {
     })
 }
 
-  const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
-    const newTrail = await postTrail(formData);
+    const newTrail = await postTrail(props.currentUser.id, formData);
     props.setTrails([
       ...props.trails,
       newTrail
@@ -83,8 +83,12 @@ export default function CreateTrail(props) {
         onChange={handleChange}
       />
       </label>
-      <Link to="/trails"><button class="create-trail-button">Submit</button></Link>
+      <button class="create-trail-button">Submit</button>
     </form>
     </div>
   )
 }
+
+
+
+

@@ -40,7 +40,7 @@ export default function TrailDetail(props) {
             <p class="info2"><b>Difficulty:</b> {trail.difficulty}</p>
             <p class="info2"><b>Length (from top to bottom):</b> {trail.length} miles</p>
             <p class="info2"><b>Travel Time From NYC:</b> {trail.travel_time_from_NYC} minutes</p>
-            <Link to='/trails/:id/update'><button className="update-button">Update Trail</button></Link>
+            <Link to={`/trails/${trail.id}/update`}><button className="update-button">Update Trail</button></Link>
             <Link to='/trails'><button onClick={() => handleClick(trail.id)} className="delete-button">Delete Trail</button></Link> </div>
             <div class="comment-header">
       <p class="comments-header">Comments:</p>

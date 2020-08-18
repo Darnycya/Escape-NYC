@@ -74,6 +74,7 @@ export default function Main(props) {
         {...props}
           setTrails={setTrails}
           trails={trails}
+          currentUser={props.currentUser}
           />
           </>
       )} />
@@ -84,6 +85,7 @@ export default function Main(props) {
             {...props}
             trails ={trails}
             comments={comments}
+            setTrails={setTrails}
           />
           </>
       )} />
