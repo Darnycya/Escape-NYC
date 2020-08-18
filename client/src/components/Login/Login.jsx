@@ -27,6 +27,7 @@ export default function Login(props) {
   }
 
   return (
+    <body className="body-homepage">
     <div class="login-background">
         <div class="login"><form onSubmit={handleSubmit}>
         <h3>Login</h3>
@@ -54,6 +55,6 @@ export default function Login(props) {
         </div>
       
         </div>
-      
+        </body>
   )
 }

@@ -27,6 +27,7 @@ export default function CreateAccount(props) {
   }
 
   return (
+    <body className="body-homepage">
     <div class="login">
     <form onSubmit={handleSubmit}>
       <h3>Create An Account</h3>
@@ -69,5 +70,6 @@ export default function CreateAccount(props) {
       <button className="submit-button-2">Submit</button>
       </form>
       </div>
+      </body>
   )
 }
