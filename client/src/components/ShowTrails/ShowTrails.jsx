@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom'
 import './ShowTrails.css'
 import Search from '../Search/Search'
 
+
 export default function ShowTrails(props) {
   return (
     <>
-    <Search />
-    <div>
+    
+      <div className="card-containers">
+      <Search />
       <h3>Trails</h3>
       {props.trails.map((trail) => (
         <div class="card">
@@ -22,7 +24,7 @@ export default function ShowTrails(props) {
        
       </div>
       <Link to='/new-trail'><button class="new-trail">Create A Trail</button></Link>
-     </>
+      </>
   )
 }
 

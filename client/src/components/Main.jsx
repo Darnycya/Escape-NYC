@@ -60,7 +60,7 @@ export default function Main(props) {
       )} />
       <Route exact path='/trails' render={() => (
        <>
-        <Layout />
+         <Layout />
         <ShowTrails
           trails={trails}
           />
