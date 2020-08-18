@@ -1,26 +1,31 @@
 .card-containers {
-  background-color: white;
-  width: 1400px;
-  margin-left: 250px;
+  background-color: rgba(250, 250, 250, .8);
+  width: 1300px;
+  margin-left: 260px;
   margin-top: 50px;
   padding-top:100px;
   padding-bottom: 100px;
-  border: solid forestgreen 10px;
+  box-shadow: 0px 0px 60px 0px greenyellow;
   border-radius: 5px;
   
 }
 
 .card {
   display: inline-table;
-  margin-left: 130px;
+  margin-left: 90px;
   
 }
 
 .circles {
   align-content: center;
-  width: 200px;
-  border-radius: 50%;  
+  width: 150px;
+   
   
+}
+
+body {
+  background-image: url(https://images.creativemarket.com/0.1.0/ps/1170442/1360/906/m1/fpnw/wm1/pkqfvwtjeiabbm1ou7gg59n21hgsc7rodcq3schmrfmn9ji9v557vtzzghgictrl-.jpg?1460399502&s=990992ede46bda5e1df6ef1d90479a97);
+  background-size: cover;
 }
 
 

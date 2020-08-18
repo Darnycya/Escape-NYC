@@ -27,8 +27,8 @@ export default function Login(props) {
   }
 
   return (
-    <body className="body-homepage">
-    <div class="login-background">
+    <body className="body-login">
+    
         <div class="login"><form onSubmit={handleSubmit}>
         <h3>Login</h3>
         <label>
@@ -54,7 +54,7 @@ export default function Login(props) {
       <Link to='/create-account'><p class="link">Create An Account</p></Link>
         </div>
       
-        </div>
+        
         </body>
   )
 }
