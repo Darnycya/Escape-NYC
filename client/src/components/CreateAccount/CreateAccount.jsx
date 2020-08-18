@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import {registerUser} from '../../services/auth'
+import { registerUser } from '../../services/auth'
+import "./CreateAccount.css"
 
 
 export default function CreateAccount(props) {
@@ -65,7 +66,7 @@ export default function CreateAccount(props) {
         onChange={handleChange}
       />
       </label>
-      <button>Submit</button>
+      <button className="submit-button-2">Submit</button>
       </form>
       </div>
   )
