@@ -19,3 +19,18 @@
   width: 300px;
   
 }
+
+@media all and (max-width: 425px) {
+  .edit-trail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-left: 40px;
+    border-radius: 50%;
+    background-color: white;
+    width: 300px;
+    
+  }
+
+}
