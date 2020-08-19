@@ -1,0 +1,21 @@
+.submit-button-TE {
+  width: 100px;
+  margin-left: 150px;
+  background:white;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 250px;
+  margin-left: 42%;
+  border-radius: 50%;
+  background-color: white;
+  width: 300px;
+  
+}

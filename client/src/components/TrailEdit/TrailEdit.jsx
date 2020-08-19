@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { putTrail } from '../../services/trails'
 import { Link } from 'react-router-dom'
+import './TrailEdit.css'
 
 export default function TrailEdit(props) {
   const [formData, setFormData] = useState({
@@ -72,7 +73,7 @@ export default function TrailEdit(props) {
       />
       </label>
     <label>
-      Travel Time From NYC:
+      Travel Time:
       <input
         type="number"
         name="travel_time_from_NYC"
@@ -81,7 +82,7 @@ export default function TrailEdit(props) {
       />
       </label>
       <label>
-        Length Of Trail:
+        Length:
       <input
         type="number"
         name="length"
@@ -98,7 +99,7 @@ export default function TrailEdit(props) {
         onChange={handleChange}
       />
       </label>
-      <button class="edit-trail-button">Submit</button>
+      <button className="submit-button-TE">Submit</button>
     </form>
   )
 }
