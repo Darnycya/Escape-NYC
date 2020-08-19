@@ -81,14 +81,14 @@ margin-left: 50px;
 @media all and (max-width: 425px) {
   .trail_image_big {
     width: 360px;
-    height: 250px;
+    height: 230px;
     border-style: solid;
   }
 
   .trailDetail-page{
     background-color: rgba(250, 250, 250, .9);
-    width: 380px;
-    margin-left: 25px;
+    width: 370px;
+    margin-left: 3px;
     box-shadow: 0px 0px 60px 0px greenyellow;
     border-radius: 5px;
   }
@@ -107,7 +107,7 @@ h4 {
 
   width: 200px;
   display: inline-block;
-  margin-left: 6px;
+  margin-left: 2px;
   
   }
   
