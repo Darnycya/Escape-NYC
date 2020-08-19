@@ -60,3 +60,18 @@ label{
 
 }
 
+
+@media all and (max-width: 425px) {
+
+  .login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -200px;
+    margin-left: 65px;
+    border-radius: 50%;
+    background-color: white;
+    width: 300px;
+    
+  }
+}
