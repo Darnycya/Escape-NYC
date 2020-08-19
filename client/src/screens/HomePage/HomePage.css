@@ -62,3 +62,47 @@ font-size: 100px;
    color: #fff;
    text-shadow: 1px 1px 2px black, 0 0 40px green, 0 0 5px yellow;
 }
+
+
+
+@media all and (max-width: 425px) {
+ 
+  .glow {
+    font-size: 50px;
+      text-align: center;
+       font-family: 'Monoton', cursive;
+       margin-top: 300px;
+       color: #fff;
+       text-shadow: 1px 1px 2px black, 0 0 40px green, 0 0 5px yellow;
+    }
+
+      .enter {
+        margin-left: 220px;
+        background:white;
+        width: 100px;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 10px;
+        margin-top:10px;
+        
+      }
+    
+      .info {
+        width: 400px;
+        margin-left: 10px;
+        background-color: rgb(252, 249, 249);
+        border-radius: 10px;
+        border-style: solid;
+        border-color: forestgreen;
+        margin-top: -80px;
+        height: 200px;
+      }
+
+      h2 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 17px;
+        text-align: justify;
+        padding-left: 50px;
+        padding-right:50px;
+        
+      }
+}

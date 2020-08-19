@@ -52,7 +52,7 @@ export default function TrailEdit(props) {
   }
 
   return (
-    <form class="login" onSubmit={handleSubmit}>
+    <form class="edit-trail" onSubmit={handleSubmit}>
       <h3>Edit Trail</h3>
       <label>
         Name:
