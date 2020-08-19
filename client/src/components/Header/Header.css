@@ -35,3 +35,23 @@ font-family: 'Monoton', cursive;
 link {
   display: inline;
 }
+
+@media all and (max-width: 425px) {
+  h1 {
+    font-size: 30px;
+    display: inline;
+    text-align: left;
+    padding-right: 90px;
+    padding-left: 10px;
+    font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Monoton', cursive;
+  }  
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 10px;
+  
+  }
+}
