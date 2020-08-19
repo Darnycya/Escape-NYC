@@ -1,11 +1,21 @@
-.login {
+.create-trail {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 13%;
+  margin-top: 200px;
   margin-left: 42%;
   border-radius: 50%;
   background-color: white;
-  width: 300px;
+  width: 320px;
   
+}
+
+.submit-button-CT {
+  width: 100px;
+  margin-left: 150px;
+  background:white;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
 }

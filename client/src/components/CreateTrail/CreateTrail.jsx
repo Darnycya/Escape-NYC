@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { postTrail } from '../../services/trails'
+import './CreateTrail.css'
 
 
 export default function CreateTrail(props) {
@@ -21,7 +22,8 @@ export default function CreateTrail(props) {
 }
 
 const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
+  const {id} = props.match.params;
     const newTrail = await postTrail(props.currentUser.id, formData);
     props.setTrails([
       ...props.trails,
@@ -36,7 +38,7 @@ const handleSubmit = async (e) => {
 
 
   return (
-    <div class="login"><form onSubmit={handleSubmit}>
+    <div class="create-trail"><form onSubmit={handleSubmit}>
       <h3>Create A Trail</h3>
       <label>
         Name:
@@ -57,7 +59,7 @@ const handleSubmit = async (e) => {
       />
       </label>
     <label>
-      Travel Time From NYC:
+      Travel Time:
       <input
         type="number"
         name="travel_time_from_NYC"
@@ -66,7 +68,7 @@ const handleSubmit = async (e) => {
       />
       </label>
       <label>
-        Length Of Trail:
+        Length:
       <input
         type="number"
         name="length"
@@ -83,7 +85,7 @@ const handleSubmit = async (e) => {
         onChange={handleChange}
       />
       </label>
-      <button class="create-trail-button">Submit</button>
+      <button class="submit-button-CT">Submit</button>
     </form>
     </div>
   )
