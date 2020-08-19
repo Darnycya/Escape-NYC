@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 200px;
-  margin-left: 50px;
+  margin-left: 750px;
   border-radius: 50%;
   background-color: white;
   width: 320px;
@@ -17,5 +17,21 @@
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 20px;
+
+}
+
+
+@media all and (max-width: 425px) {
+  .create-trail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 50px;
+    border-radius: 50%;
+    background-color: white;
+    width: 320px;
+    
+  }
 
 }
