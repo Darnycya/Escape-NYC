@@ -4,6 +4,7 @@ class TrailsController < ApplicationController
 
   # GET /trails
   def index
+    # @user = User.find(params[:user_id])
     @trails = Trail.all
 
     render json: @trails
@@ -11,12 +12,15 @@ class TrailsController < ApplicationController
 
   # GET /trails/1
   def show
+    # @user = User.find(params[:user_id])
+    @trail = Trail.find(params[:id])
     render json: @trail, include: :comments
   end
 
   # POST /trails
   def create
-    @trail = Trail.new(trail_params)
+    @user = User.find(params[:user_id])
+    @trail = Trail.where(user_id:@user.id).new(trail_params)
 
 
     if @trail.save

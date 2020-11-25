@@ -10,7 +10,7 @@ export default function ShowTrails(props) {
     
       <div className="card-containers">
       <Search />
-      <h3>Trails</h3>
+      <h3 class="trail-header">Trails</h3>
       {props.trails.map((trail) => (
         <div class="card">
           <div class="circles">
