@@ -11,7 +11,8 @@ User.create(name: 'Jillian Michaels', email: 'girlsrule@gmail.com', password: 'i
 User.create(name: 'Shaun T', email: 'insanity123@gmail.com', password: 'strongbuns43', user_image:'https://magarticles.magzter.com/articles/13294/236690/59a601c2bde51/SHAUN-T-LETS-NOTHING-STOP-HIM.jpg')
 User.create(name: 'Joe Wicks', email: 'imsohandsome@gmail.com', password: 'lookatmyabs', user_image:'https://magarticles.magzter.com/articles/13294/236690/59a601c2bde51/SHAUN-T-LETS-NOTHING-STOP-HIM.jpg')
 User.create(name: 'Massy Arias', email: 'armslikearias@gmail.com', password: 'buttkicker43', user_image: 'https://static1.squarespace.com/static/53fba539e4b0a52701b62eb4/556606a7e4b03db69572f6fa/5a541cb8652deace1b5c432c/1591383176305/MassyArias_00514e.jpg?format=1500w')
-
+User.create(name: 'Tom', email: 'tom@myspace.com', password: '1234', user_image: 'User.create(name: 'Massy Arias', email: 'armslikearias@gmail.com', password: 'buttkicker43', user_image: 'https://static1.squarespace.com/static/53fba539e4b0a52701b62eb4/556606a7e4b03db69572f6fa/5a541cb8652deace1b5c432c/1591383176305/MassyArias_00514e.jpg?format=1500w')
+')
 
 Trail.create(name: 'Breakneck Mountain', difficulty: 'hard', travel_time_from_NYC: 81, length: 6, trail_image: 'https://www.nynjtc.org/sites/default/files/styles/hike_park_destination_page/public/hotw/BreakneckRidgePanorama_EduardoGil2014.jpg?itok=KOE4oHkO', user_id: 3)
 Trail.create(name: 'Anthonys Nose', difficulty: 'easy', travel_time_from_NYC: 46, length: 4, trail_image: 'https://hikethehudsonvalley.com/wp-content/uploads/2015/05/Spring2014_RWAN_955.jpg', user_id: 3)
