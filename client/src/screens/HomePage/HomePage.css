@@ -27,7 +27,7 @@ h2 {
 }
 .info {
   width: 900px;
-  margin-left: 58vh;
+  margin-left: 38vh;
   background-color: rgb(252, 249, 249);
   border-radius: 10px;
   border-style: solid;
@@ -42,7 +42,7 @@ h2 {
 }
 
 .enter {
-  margin-left: 50%;
+  margin-left: 105vh;
   background:white;
   width: 180px;
   transform: translateX(-50%) translateY(-50%);
