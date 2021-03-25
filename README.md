@@ -1,12 +1,5 @@
 # Escape-NYC
 
-
-<p align="center">
-<img src="https://media.giphy.com/media/XHdF1KhNcuw3UJowA4/giphy.gif"></img>
-</p>
-
-
-
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Goals](#goals)
@@ -27,8 +20,16 @@
 
 ## Overview
 
+<p align="center">
+<img src="https://media.giphy.com/media/XHdF1KhNcuw3UJowA4/giphy.gif"></img>
+</p>
+
 
 _**Escape NYC** is a web application that will allow users to submit hiking trails that they have found to help encourage New Yorkers to leave the city and get some fresh air during quarantine. Users can submit multiple trails, uploading a scenic view of the hike, the distance in miles from NYC and it's difficulty rated from easy, moderate, and hard. Users can also comment on different hikes on the website._
+
+## Link To App
+
+<a href="escape-nyc-app.netlify.app/">Click here</a>
 
 
 <br>
