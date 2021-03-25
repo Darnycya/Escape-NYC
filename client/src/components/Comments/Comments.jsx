@@ -10,7 +10,7 @@ export default function Comments(props) {
       <p>Comments:</p>
       {props.comments.map((comment) => (
         <>
-          <img class="user_image" src={comment.user_id.user_image}></img>
+          <img class="user_image" alt="user" src={comment.user_id.user_image}></img>
           <p>{comment.user_id.name}</p>
             <p>{comment.comment}</p>
         </>
