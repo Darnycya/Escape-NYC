@@ -1,209 +1,68 @@
-# Escape-NYC
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- [Overview](#overview)
-- [MVP](#mvp)
-  - [Goals](#goals)
-  - [Libraries and Dependencies](#libraries-and-dependencies)
-  - [Client (Front End)](#client-front-end)
-    - [Wireframes](#wireframes)
-    - [Component Tree](#component-tree)
-    - [Component Hierarchy](#component-hierarchy)
-    - [Component Breakdown](#component-breakdown)
-    - [Time Estimates](#time-estimates)
-  - [Server (Back End)](#server-back-end)
-    - [ERD Model](#erd-model)
-- [Post-MVP](#post-mvp)
-- [Code Showcase](#code-showcase)
-- [Code Issues & Resolutions](#code-issues--resolutions)
+## Available Scripts
 
-<br>
+In the project directory, you can run:
 
-## Overview
+### `yarn start`
 
-<p align="center">
-<img src="https://media.giphy.com/media/XHdF1KhNcuw3UJowA4/giphy.gif"></img>
-</p>
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-_**Escape NYC** is a web application that will allow users to submit hiking trails that they have found to help encourage New Yorkers to leave the city and get some fresh air during quarantine. Users can submit multiple trails, uploading a scenic view of the hike, the distance in miles from NYC and it's difficulty rated from easy, moderate, and hard. Users can also comment on different hikes on the website._
+### `yarn test`
 
-## Link To App
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<a href="escape-nyc-app.netlify.app/">Click here</a>
+### `yarn build`
 
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-<br>
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-## MVP
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-_The **Escape NYC** MVP is to create a full CRUD database._
+### `yarn eject`
 
-<br>
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Goals
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- _A semi CRUD database for users._
-- _A full CRUD database for trails._
-- _Attractive CSS._
-- _Searchbar for trails._
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-<br>
+## Learn More
 
-### Libraries and Dependencies
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _The framework for the app._               |
-|   React Router   | _Allow transitions between screens._       |
-|    Body-Parser   | _Allow user to make edits._                |
-|     Rails        | _The full stack framework for the app._    |
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
+### Analyzing the Bundle Size
 
-<br>
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Client (Front End)
+### Making a Progressive Web App
 
-#### Wireframes
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-[Click Here](https://wireframe.cc/JSUq6z)
+### Advanced Configuration
 
-- Desktop Home / Index 
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-[Click Here](https://wireframe.cc/rf9vuH)
+### Deployment
 
-- Desktop Hill Page / Log In
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-[Click Here](https://wireframe.cc/F3j1jd)
+### `yarn build` fails to minify
 
-- Desktop User Page / Create An Account
-
-[Click Here](https://wireframe.cc/HKMvpv)
-
-- Desktop Create A New Trail
-
-[Click Here](https://wireframe.cc/Pey0V0)
-
-- Mobile Home / Index
-
-[Click Here](https://wireframe.cc/qPvs1O)
-
-- Mobile Hill Page / Log In
-
-[Click Here](https://wireframe.cc/JRhUCS)
-
-- Mobile User Page / Create An Account
-
-[Click Here](https://wireframe.cc/Vk7cUn)
-
-- Mobile Create A New Trail
-
-#### Component Tree
-
-[Click Here](https://drive.google.com/file/d/1uV4vhjnUoIYGKOfai6Wk2EAj-yoWmrIZ/view?usp=sharing)
-
-#### Component Hierarchy
-
-
-
-``` structure
-
-src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-      |__ Search.jsx
-      |__ Main.jsx
-      |__ ShowTrails.jsx
-      |__ TrailDetails.jsx
-      |__ Comments.jsx
-      |__ UpdateTrail.jsx
-      |__ Login.jsx
-      |__ UserPage.jsx
-      |__ Register.jsx
-      |__ Header.jsx
-      |__ Shared.jsx
-        |__ Header.jsx
-        |__ Footer.jsx
-        |__ Layout.jsx
-|_ screens/
-      |__ Home
-      |__ ListOfTrails
-      |__ TrailDetails 
-      |__ UpdateTrail
-      |__ Login
-      |__ Register
-      |__ User
-      |__ SearchResults        
-|__ services/
-
-```
-
-#### Component Breakdown
-
-
-
-|  Component   |    Type    | state | props | Description                                                      |
-| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the logo and Login link/User's Picture._|
-|    Search    |   class    |   y   |   n   | _The search bar will render searched trails on a new page._      |
-|  Show Trails |   class    |   y   |   y   | _Show Trails will display a list of all of the trails._          |
-| Trail Details|   class    |   y   |   y   | _Trail Details will render all of the trail's properties._       |
-|   Comments   | functional |   y   |   y   | _The Comments will show the comments._                           |
-| Update Trail |   class    |   y   |   y   | _Update Trail will allow props to be passed to Show Trails and Trail Details._ |
-|    Login     | functional |   n   |   n   | _Login will take in the user's information._       |
-|   User Page  | functional |   n   |   y   | _The User Page will render the Login Information._      |
-|   Register   | functional |   n   |   n   | _Register will take in user's information._                 |
-
-
-#### Time Estimates
-
-
-
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create models and tables |    H  |     3 hrs      |     3.5 hrs     |    TBD    |
-| Create CRUD Actions |    H     |     8 hrs      |     9 hrs     |     TBD     |
-| Create Screens    |    H     |     24 hrs      |     24 hrs     |    TBD    |
-| Routing between pages |    L     |     2 hrs      |     3 hrs     |     TBD     |
-| Search Bar    |    L     |     2 hrs      |     2 hrs     |    TBD    |
-| Comments |    L     |     2 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |     41 hrs      |     44.5 hrs     |     TBD     |
-
-
-<br>
-
-### Server (Back End)
-
-#### ERD Model
-
-[Click Here](https://drive.google.com/file/d/1aMZXlD2ze2R-obvpDMFava6SvLVG0Ktb/view?usp=sharing)
-
-
-<br>
-
-***
-
-## Post-MVP
-
-
-- _A Full CRUD database for users._
-- _A full CRUD database for comments._
-- _A live search bar._
-- _Allow users to find users._
-- _Display trails users created in their user profile._
-
-<br>
-
-***
-
-## Needs To Be Done
-
-- Correct Paths and Database
-- Create Comments 
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
