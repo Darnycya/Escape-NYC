@@ -1,0 +1,55 @@
+.w-100 {
+  width: 100% !important;
+  height: 70vh;
+}
+
+.mission-statement{
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  margin-top: 200px;
+}
+
+
+.review-container{
+width: 100%;
+display: flex;
+margin: 200px 0px 200px 0px;
+}
+
+.review1 {
+width: 400px;
+height: 500px;
+margin-right: 50px;
+margin-left: 60px;
+box-shadow: 10px 10px 8px 10px #888888;
+}
+
+.review2 {
+  width: 400px;
+  height: 500px;
+  margin-right: 50px;
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+
+.review3 {
+  width: 400px;
+  height: 500px;
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+
+.review-icon {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin: 10px 0px 50px 100px;
+}
+
+.review-words{
+  width: 350px;
+  margin-left: 25px;
+}
+
+p {
+  text-align: center;
+}
