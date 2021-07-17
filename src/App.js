@@ -1,7 +1,9 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import HomePage from './Screens/HomePage/HomePage';
+import LogIn from './Screens/LogIn/LogIn';
 import './App.css';
 
 function App() {
@@ -10,9 +12,14 @@ function App() {
 
   return (
     <>
-      <Header />
-      <HomePage />
-      <Footer />
+      <Route path="/" component={Header} />
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/login-in" component={LogIn} />
+      {/* <Route exact path="/sign-up" component={SignUp} />
+      <Route exact path="/about-us" component={AboutUs} />
+      <Route exact path="/trails" component={Trails} /> */}
+      <Route path="/" component={Footer} />
+      
       </>
       
       
