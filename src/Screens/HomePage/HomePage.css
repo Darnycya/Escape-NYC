@@ -1,23 +1,26 @@
 .w-100 {
   width: 100% !important;
-  height: 70vh;
+  height: 77vh;
 }
 
 .mission-statement{
   margin: auto;
-  width: 80%;
+  width: 100%;
+  height: 700px;
   align-items: center;
-  margin-top: 200px;
+  background-color:white;
 }
 
 
 .review-container{
 width: 100%;
 display: flex;
-margin: 200px 0px 200px 0px;
+background-color: rgb(167, 184, 82);
 }
 
 .review1 {
+margin-bottom: 60px;
+margin-top: 50px;
 width: 400px;
 height: 500px;
 margin-right: 50px;
@@ -27,6 +30,8 @@ box-shadow: 10px 10px 8px 10px #888888;
 }
 
 .review2 {
+  margin-bottom: 60px;
+  margin-top: 50px;
   width: 400px;
   height: 500px;
   margin-right: 50px;
@@ -35,6 +40,8 @@ box-shadow: 10px 10px 8px 10px #888888;
 }
 
 .review3 {
+  margin-bottom: 60px;
+  margin-top: 50px;
   width: 400px;
   height: 500px;
   background-color: white;
