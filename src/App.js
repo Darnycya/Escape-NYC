@@ -6,6 +6,7 @@ import HomePage from './Screens/HomePage/HomePage';
 import LogIn from './Screens/LogIn/LogIn';
 import AboutUs from './Screens/AboutUs/AboutUs';
 import Trails from './Screens/Trails/Trails';
+import Profile from './Screens/Profile/Profile'
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route exact path="/login-in" component={LogIn} />
       <Route exact path="/about-us" component={AboutUs} />
       <Route exact path="/trails" component={Trails} />
+      <Route exact path="/profile" component={Profile} />
       <Route path="/" component={Footer} />
       
       </>
