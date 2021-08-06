@@ -60,21 +60,21 @@ export default function HomePage() {
       
       <div className="review-container">
         <div className="review1">
-          <img className='review-icon' src="https://i.pinimg.com/originals/08/1e/8d/081e8df05d58af26f39ef168e9f3815b.jpg"></img>
+          <img className='review-icon' alt="Beyonce" src="https://i.pinimg.com/originals/08/1e/8d/081e8df05d58af26f39ef168e9f3815b.jpg"></img>
           <div className="review-words"><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
         
         </div>
 
 
         <div className="review2">
-          <img className='review-icon' src="https://www.charityprotravel.com/sites/default/files/styles/news_large/public/field/image/lancebass.jpg?itok=i1zcIV0y"></img>
+          <img className='review-icon' alt="Lance" src="https://www.charityprotravel.com/sites/default/files/styles/news_large/public/field/image/lancebass.jpg?itok=i1zcIV0y"></img>
           
           <div className="review-words"><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
         </div>
 
 
         <div className="review3">
-          <img className='review-icon' src="https://qph.fs.quoracdn.net/main-qimg-892c66e7940edc2760418aed185d379c"></img>
+          <img className='review-icon' alt="Some guy" src="https://qph.fs.quoracdn.net/main-qimg-892c66e7940edc2760418aed185d379c"></img>
           <div className="review-words"><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
         </div>
         </div>

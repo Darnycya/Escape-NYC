@@ -6,7 +6,7 @@ export default function Profile() {
     <div className="profile-container">
      
       <form className="profile-form">
-      <img className="profile-picture" src="https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png"></img><br />
+      <img className="profile-picture" alt="" src="https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png"></img><br />
           <input className="edit" placeholder="First Name"></input>
           <input className="edit" placeholder="Last Name"></input><br />
           <input className="edit" placeholder="Username"></input><br />
