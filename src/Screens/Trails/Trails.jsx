@@ -55,7 +55,60 @@ export default function Trails() {
       </div>
       </div>
       </div>
-      <div className="trails-container">
+<div className="trails">
+      
+        <div className="trail">
+          <div className="trail-image-container">
+            <img className="trail-image" src="https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png"></img>
+          </div>
+          <div className="trail-description-container">
+            Name:<br />
+            Level:<br />
+            Distance:<br />
+            Rating:<br />
+            Username<br/>
+            </div>
+      </div>
+      
+      <div className="trail">
+          <div className="trail-image-container">
+            <img className="trail-image" src="https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png"></img>
+          </div>
+          <div className="trail-description-container">
+            Name:<br />
+            Level:<br />
+            Distance:<br />
+            Rating:<br />
+            Username<br/>
+            </div>
+      </div>
+      
+      <div className="trail">
+          <div className="trail-image-container">
+            <img className="trail-image" src="https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png"></img>
+          </div>
+          <div className="trail-description-container">
+            Name:<br />
+            Level:<br />
+            Distance:<br />
+            Rating:<br />
+            Username<br/>
+            </div>
+      </div>
+      
+      <div className="trail">
+          <div className="trail-image-container">
+            <img className="trail-image" src="https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png"></img>
+          </div>
+          <div className="trail-description-container">
+            Name:<br />
+            Level:<br />
+            Distance:<br />
+            Rating:<br />
+            Username<br/>
+            </div>
+        </div>
+
         <div className="trail">
           <div className="trail-image-container">
             <img className="trail-image" src="https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png"></img>
@@ -68,8 +121,8 @@ export default function Trails() {
             Username<br/>
             </div>
         </div>
-      </div>
-      
+
+        </div>
       </>
   )
 }

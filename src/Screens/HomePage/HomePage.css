@@ -15,11 +15,21 @@
   background-color:white;
 }
 
+.statement{
+  margin: 350px 350px;
+  width: 700px;
+  
+}
+
+p{
+  text-align: left;
+}
 
 .review-container{
 width: 100%;
 display: flex;
-background-color: rgb(167, 184, 82);
+background-color: rgb(116, 250, 199)
+/* background-color: rgb(167, 184, 82); */
 }
 
 .review1 {

@@ -1,6 +1,4 @@
-.search-container{
- 
-}
+
 
 .searchbar{
   width: 400px;
@@ -19,6 +17,7 @@
 .top-container {
   display: flex;
   margin-left: 250px;
+  margin-top: 50px;
 }
 
 .filters {
@@ -29,17 +28,16 @@ label {
  margin-left: 5px;
 }
 
-
-.trails-container{
-  margin-bottom: 100px;
-  display: flex;
-  width: 900px;
+.trails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 100px 0px 100px 70px;
 }
-
 .trail{
   border: 1px solid black;
   display: flex;
-  width: 600px;
+  width: 400px;
   
 }
 
