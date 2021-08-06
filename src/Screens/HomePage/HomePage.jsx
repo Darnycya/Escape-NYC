@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="content">
     <Carousel fade>
   <Carousel.Item>
     <img

@@ -1,6 +1,10 @@
+.content {
+  margin-top: -5px;
+}
+
 .w-100 {
   width: 100% !important;
-  height: 77vh;
+  height: 76vh;
 }
 
 .mission-statement{
