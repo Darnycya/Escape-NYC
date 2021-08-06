@@ -15,7 +15,7 @@ function App() {
       <Route path="/" component={Header} />
       <Route exact path="/" component={HomePage} />
       <Route exact path="/login-in" component={LogIn} />
-      {/* <Route exact path="/sign-up" component={SignUp} />
+      {/* 
       <Route exact path="/about-us" component={AboutUs} />
       <Route exact path="/trails" component={Trails} /> */}
       <Route path="/" component={Footer} />

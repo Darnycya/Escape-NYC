@@ -13,8 +13,7 @@ export default function Layout() {
       </div>
       
       <div className="nav-login">
-      <Link to="/login-in" className="link">Login In</Link> |
-      <Link to="/sign-up" className="link">Sign Up</Link>
+      <Link to="/login-in" className="link">Login In | Sign Up</Link>
       </div>
 
     </div>
