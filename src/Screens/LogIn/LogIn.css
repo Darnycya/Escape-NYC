@@ -19,7 +19,13 @@ width: 100%;
   border-left: solid grey 2px;
 }
 
-input {
+.signup {
+  padding: 5px;
+  margin: 5px;
+  width: 189px;
+}
+
+.login {
   padding: 5px;
   margin: 5px;
   width: 189px;

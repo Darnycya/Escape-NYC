@@ -6,20 +6,20 @@ export default function Login() {
     <div className="form-container">
       <form className="login-form">
       Log In:<br/>
-          <input placeholder="Username"></input><br/>
-          <input placeholder="Password"></input><br />
+          <input className="login" placeholder="Username"></input><br/>
+          <input className="login" placeholder="Password"></input><br />
         <button>Log In</button><br/>
         Forgot your password?<br />
         Forgot your username?<br/>
         </form>
       <form className="signup-form">
       Sign Up:<br/>
-          <input placeholder="First Name"></input>
-          <input placeholder="Last Name"></input><br />
-          <input placeholder="Username"></input><br />
+          <input className="signup" placeholder="First Name"></input>
+          <input className="signup" placeholder="Last Name"></input><br />
+          <input className="signup" placeholder="Username"></input><br />
           Username can only contain letters and numbers.<br />
-          <input placeholder="Password"></input>
-          <input placeholder="Confirm Password"></input><br />
+          <input className="signup" placeholder="Password"></input>
+          <input className="signup" placeholder="Confirm Password"></input><br />
           Password should contain more than 6 letters.<br />
           <button>Submit</button>
         </form>
