@@ -7,23 +7,32 @@
   height: 76vh;
 }
 
+.iPhone{
+  height: 500px;
+  width: 400px;
+  margin-left: 150px;
+}
+
 .mission-statement{
+  padding: 100px 0px;
   margin: auto;
   width: 100%;
-  height: 700px;
   align-items: center;
   background-color:white;
+  display: flex;
 }
 
 .statement{
-  margin: 350px 350px;
-  width: 700px;
-  
+width: 500px;
+margin-left: 150px;
 }
 
-p{
-  text-align: left;
+.actual-statement{
+  text-align: justify;
+  font-size: 20px;
 }
+
+
 
 .review-container{
 width: 100%;
@@ -75,5 +84,10 @@ margin: 10px 0px 50px 100px;
 }
 
 p {
-  text-align: center;
+  text-align: justify;
+}
+
+.names {
+  text-align: right;
+  font-weight: bold;
 }

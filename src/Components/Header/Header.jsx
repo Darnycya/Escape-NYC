@@ -8,7 +8,6 @@ export default function Layout() {
       <Link className="escape-logo" to="/"><img className="logo" alt="Logo" src="https://res.cloudinary.com/darnycya/image/upload/v1620845608/EscapeNYClogo_cppudw.jpg"></img></Link>
       
       <div className="nav-links">
-        <Link to="/about-us" className="link">About Us</Link>
         <Link to="/trails" className="link">Trails</Link>
       </div>
       
