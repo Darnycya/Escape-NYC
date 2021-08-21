@@ -6,8 +6,8 @@ export default function Trails() {
   return (
     <>
     <div className="top-container">
-     <div className="search-container">
-        <input className="searchbar" placeholder="Search"></input><button>Go</button>
+        <div className="search-container">
+        <input className="searchbar" placeholder="Search"></input><button className="search-button">Go</button>
         </div> 
         <div className="filter-container">
           Filter:

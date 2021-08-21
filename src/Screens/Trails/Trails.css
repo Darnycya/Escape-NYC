@@ -1,7 +1,24 @@
-
-
 .searchbar{
-  width: 400px;
+  width: 500px;
+  margin-left: 100px;
+  height: 40px;
+  margin-top: 50px;
+  border-radius: 25px;
+  border: 10px;
+}
+
+::placeholder{
+font-size: 24px;
+padding: 20px;
+}
+
+.search-button{
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid white;
+  margin: 10px;
+  height: 40px;
+  width: 40px;
 }
 
 .filter{
@@ -16,12 +33,13 @@
 
 .top-container {
   display: flex;
-  margin-left: 250px;
-  margin-top: 50px;
+  margin-top: -5px;
+  background-color: rgb(116, 250, 199);
 }
 
 .filters {
-  padding: 0px 15px;
+  padding-left: 10px;
+  padding-bottom: -5px;
 }
 
 label {
@@ -50,3 +68,5 @@ label {
 .trail-description-container{
   padding: 10px;
 }
+
+
