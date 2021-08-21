@@ -3,13 +3,13 @@
 
 .logo {
 width: 400px;
-margin: -5px 0px 0px 30px;
+margin: -5px 0px 0px 100px;
 height: 125px;
 }
 
 .navbar {
   width: 100%;
-  height: 130px;
+  height: 140px;
   background-color: white;
   border-bottom: 1px black solid;
   display: flex;
@@ -17,20 +17,23 @@ height: 125px;
 }
 
 .nav-links {
-  margin: 50px 0px 0px 230px;
-  color: black;
+  margin: 50px 0px 0px 400px;
 }
 
 .nav-login {
-  margin: 50px 0px 0px 300px;
+  margin: 50px 0px 0px 0px;
 }
 
+.signIn-link{
+  color: black;
+  font-size: 24px;
+}
 
 .link {
   font-family: 'Noto Sans', sans-serif;
-  margin: 20px;
-  font-size: 18px;
-  color: black;
+  margin: 10px;
+  font-size: 24px;
+  color: rgb(37, 118, 240);
   text-decoration: none;
 }
 
