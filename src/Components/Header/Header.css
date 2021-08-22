@@ -27,10 +27,11 @@ height: 125px;
 .signIn-link{
   color: black;
   font-size: 24px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .link {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 10px;
   font-size: 24px;
   color: rgb(37, 118, 240);

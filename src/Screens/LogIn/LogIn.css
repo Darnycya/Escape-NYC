@@ -3,11 +3,12 @@ display: flex;
 margin-left: 250px;
 margin-top: 50px;
 margin-bottom: 50px;
-width: 100%;
+width: 65%;
+background-color:rgb(230, 230, 230);
 }
 
 .login-form {
-  width: 500px;
+  width: 400px;
   height: 400px;
   padding: 50px;
 }
@@ -23,14 +24,30 @@ width: 100%;
   padding: 5px;
   margin: 5px;
   width: 189px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: white;
+  border: 1px solid white;
 }
 
 .login {
   padding: 5px;
   margin: 5px;
   width: 189px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: white;
+  border: 1px solid white;
 }
 
 button {
   margin: 5px;
+}
+
+.login::placeholder{
+  font-size: 12px;
+}
+
+.signup::placeholder{
+  font-size: 12px;
 }
