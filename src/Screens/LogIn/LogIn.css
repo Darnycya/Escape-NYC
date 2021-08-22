@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
 .form-container {
 display: flex;
 margin-left: 250px;
@@ -8,16 +11,17 @@ background-color:rgb(230, 230, 230);
 }
 
 .login-form {
-  width: 400px;
+  width: 380px;
   height: 400px;
   padding: 50px;
+  margin-left: 40px;
 }
 
 .signup-form {
   width: 500px;
   height: 400px;
   padding: 50px;
-  border-left: solid grey 2px;
+  border-left: solid rgb(197, 197, 197) 2px;
 }
 
 .signup {
@@ -42,12 +46,39 @@ background-color:rgb(230, 230, 230);
 
 button {
   margin: 5px;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid black;
+
 }
 
 .login::placeholder{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .signup::placeholder{
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.fake-labels{
+  margin-bottom: -20px;
+  font-size: 14px;
+}
+
+.login-button{
+  margin-left: 140px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.submit-button{
+  margin-left: 330px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
 }
