@@ -1,0 +1,23 @@
+.searchbar{
+  width: 500px;
+  margin-left: 100px;
+  height: 40px;
+  margin-top: 50px;
+  border-radius: 25px;
+  border: 10px;
+  outline: none;
+}
+
+::placeholder{
+font-size: 24px;
+padding: 20px;
+}
+
+.search-button{
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid white;
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+}
