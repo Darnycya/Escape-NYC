@@ -8,7 +8,7 @@ const Trail = (props) => {
       <>
            <div className="trail">
           <div className="trail-image-container">
-          <Link className="trail-link" to={`/trails/${props._id}`}>
+          <Link className="trail-link" to={`/trails/${props.name}`}>
                 <img className="trail-image" src={props.trailUrl} alt={props.name} />
             </Link>
           </div>
