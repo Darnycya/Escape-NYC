@@ -21,12 +21,12 @@ const Trails = (props) => {
     fetchTrails()
   }, [])
 
-  // const handleSearch = event => {
-  //   const newQueriedTrails = allTrails.filter(trail => trail.name.toLowerCase().includes(event.target.value.toLowerCase()))
-  //   setQueriedTrails(newQueriedTrails)
-  // }
+  const handleSearch = event => {
+    const newQueriedTrails = allTrails.filter(trail => trail.name.toLowerCase().includes(event.target.value.toLowerCase()))
+    setQueriedTrails(newQueriedTrails)
+  }
 
-  // const handleSubmit = event => event.preventDefault()
+  const handleSubmit = event => event.preventDefault()
 
   const trailsJSX = queriedTrails.map((trail, index) =>
   <TrailList _id={trail._id} name={trail.name} trailUrl={trail.trailUrl} difficulty={trail.difficulty} distanceFromNyc={trail.distanceFromNyc} climbingTime={trail.climbingTime} rating={trail.rating} key={index} />
@@ -37,7 +37,7 @@ const Trails = (props) => {
   return (
     <>
        <div className="top-container">
-          <Search  /> 
+       <Search onSubmit={handleSubmit} onChange={handleSearch} />
       </div>
 
          {trailsJSX}

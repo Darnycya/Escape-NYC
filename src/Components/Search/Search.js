@@ -6,8 +6,8 @@ const Search = (props) => {
         <form autocomplete="off" className="search-form" onSubmit={(e) => props.onSubmit(e)}>
             <input
                 className="searchbar"
-                // value={props.value}
-                // onChange={(e) => props.onChange(e)}
+                value={props.value}
+                onChange={(e) => props.onChange(e)}
                 name="Search"
                 placeholder="Search"
                 type="text"
