@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './TrailList.css';
 
-const TrailList = (props) => {
+const Trail = (props) => {
   
     return (
       <>
@@ -26,6 +26,6 @@ const TrailList = (props) => {
         </>
     )
 }
-export default TrailList
+export default Trail
 
 
