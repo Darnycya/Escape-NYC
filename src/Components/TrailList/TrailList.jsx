@@ -22,7 +22,7 @@ const Trail = (props) => {
               <img alt="star" className="star" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNnGdm_9JNZzTDOKVhALeT_bw6Pvh5nZFraKlT4njFdpjul7HmqchP1uyRy6NGyyDq8I&usqp=CAU"></img>
               <img alt="star" className="star" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNnGdm_9JNZzTDOKVhALeT_bw6Pvh5nZFraKlT4njFdpjul7HmqchP1uyRy6NGyyDq8I&usqp=CAU"></img></h6>
             </div>
-      </div>
+          </div>
         </>
     )
 }

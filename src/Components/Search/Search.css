@@ -1,8 +1,7 @@
 .searchbar{
   width: 500px;
-  margin-left: 100px;
+  margin: 50px 0px 50px 100px;
   height: 40px;
-  margin-top: 50px;
   border-radius: 25px;
   border: 10px;
   outline: none;

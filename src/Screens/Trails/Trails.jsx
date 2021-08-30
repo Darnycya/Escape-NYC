@@ -40,8 +40,9 @@ const Trails = (props) => {
        <Search onSubmit={handleSubmit} onChange={handleSearch} />
       </div>
 
+      <div className="trails">
          {trailsJSX}
-      
+      </div>
     </>
   )
 }
