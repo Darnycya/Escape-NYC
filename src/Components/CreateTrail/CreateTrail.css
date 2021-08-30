@@ -1,0 +1,24 @@
+.create-trail-input{
+width: 300px;
+margin: 5px;
+}
+
+.level-label{
+padding-right: 110px;
+}
+
+.rating-label{
+  padding-right: 115px;
+  }
+
+.create-trail-form{
+  margin-left: 150px;
+ padding-top: 60px;
+}
+
+.create-trail-container{
+  background-color:rgb(230, 230, 230);
+  width: 600px;
+  height: 380px;
+  margin: 50px 420px;
+}

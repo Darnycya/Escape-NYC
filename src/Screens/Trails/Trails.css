@@ -29,3 +29,10 @@ label {
   gap: 10px;
   margin: 100px 50px;
 }
+
+.create-trail{
+  color: white;
+  padding: 10px;
+  margin-left: 95vh;
+  margin-bottom: 100px;
+}

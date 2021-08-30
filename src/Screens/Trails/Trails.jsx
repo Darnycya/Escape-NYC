@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Search from '../../Components/Search/Search';
 import TrailList from '../../Components/TrailList/TrailList';
 import { getTrails } from '../../services/trails';
@@ -43,6 +43,8 @@ const Trails = (props) => {
       <div className="trails">
          {trailsJSX}
       </div>
+
+      <Link to="/create-trail"><button className="create-trail">Create A Trail</button></Link>
     </>
   )
 }
