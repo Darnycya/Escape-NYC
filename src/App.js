@@ -7,9 +7,11 @@ import LogIn from './Screens/LogIn/LogIn';
 import Trails from './Screens/Trails/Trails';
 import Profile from './Screens/Profile/Profile';
 import CreateTrail from './Components/CreateTrail/CreateTrail';
+import TrailDetail from './Components/TrailDetail/TrailDetail';
+
 import './App.css';
 
-function App() {
+const App = () => {
 
 
 
@@ -21,6 +23,7 @@ function App() {
       <Route exact path="/trails" component={Trails} />
       <Route exact path="/profile" component={Profile} />
       <Route exact path="/create-trail" component={CreateTrail} />
+      <Route exact path="/trails/:name" component={TrailDetail} />
       <Route path="/" component={Footer} />
       
       </>
