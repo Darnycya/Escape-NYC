@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getTrail, deleteTrail } from '../../services/trails';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './TrailDetail.css';
 
 const TrailDetail = (props) => {
@@ -17,10 +18,10 @@ const TrailDetail = (props) => {
     fetchTrail()
 }, [id])
 
-  console.log(id)
+ 
 
   return (
-
+<>
     <div className="trail-detail-container">
       {trail !== null &&
         <>
@@ -35,9 +36,12 @@ const TrailDetail = (props) => {
         <h3>Rating:</h3>{trail.rating}<br />
         </div>
         </>
-      } 
+      }
       
     </div>
+    <button className="edit-button">Edit Trail</button>
+    <Link className="delete-link" to={`/trails`}><button className="delete-button" onClick={() => deleteTrail(trail._id)}>Delete Trail</button></Link>
+    </>
   )
 }
 

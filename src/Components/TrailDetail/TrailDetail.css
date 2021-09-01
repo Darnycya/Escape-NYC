@@ -1,3 +1,11 @@
 .trail-detail-container{
   display: flex;
 }
+
+.edit-button{
+  color:white;
+}
+
+.delete-button{
+  color:white;
+}

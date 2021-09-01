@@ -18,7 +18,7 @@ const CreateTrail = (props) => {
 
   const handleChange = (event) => {
     const { name, value } = event.target
-    console.log(name, value)
+  
     setTrail({
             ...trail,
             [name]: value
@@ -37,7 +37,7 @@ const CreateTrail = (props) => {
     console.log('Something went wrong girl')
 }
 
-  console.log({ ...trail })
+  
   return (
     <div className="create-trail-container">
      <form className="create-trail-form" autoComplete="off" onSubmit={handleSubmit}>
@@ -105,7 +105,7 @@ const CreateTrail = (props) => {
           className="submit-button"
           type='submit'>Submit
         </button>
-        </form> 
+      </form>
     </div>
   )
 }
