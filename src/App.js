@@ -8,6 +8,7 @@ import Trails from './Screens/Trails/Trails';
 import Profile from './Screens/Profile/Profile';
 import CreateTrail from './Components/CreateTrail/CreateTrail';
 import TrailDetail from './Components/TrailDetail/TrailDetail';
+import TrailEdit from './Components/TrailEdit/TrailEdit';
 
 import './App.css';
 
@@ -24,6 +25,7 @@ const App = () => {
       <Route exact path="/profile" component={Profile} />
       <Route exact path="/create-trail" component={CreateTrail} />
       <Route exact path="/trails/:id" component={TrailDetail} />
+      <Route exact path="/trails/:id/edit" component={TrailEdit} />
       <Route path="/" component={Footer} />
       
       </>
