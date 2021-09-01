@@ -17,8 +17,13 @@ const TrailDetail = (props) => {
     fetchTrail()
 }, [id])
 
+  console.log(id)
+
   return (
+
     <div className="trail-detail-container">
+      {trail !== null &&
+        <>
       <div className="trail-image-detail">
         <img src={trail.trailUrl} alt={trail.name}></img>
       </div>
@@ -28,7 +33,9 @@ const TrailDetail = (props) => {
         <h3>Distance From NYC:</h3>{trail.distanceFromNyc} miles<br />
         <h3>Time To Climb:</h3>{trail.climbingTime} hours<br />
         <h3>Rating:</h3>{trail.rating}<br />
-      </div>
+        </div>
+        </>
+      } 
       
     </div>
   )

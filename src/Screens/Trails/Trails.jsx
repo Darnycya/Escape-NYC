@@ -8,6 +8,7 @@ import './Trails.css';
 const Trails = (props) => {
   const [allTrails, setAllTrails] = useState([])
   const [queriedTrails, setQueriedTrails] = useState([])
+  const [isLoaded, setLoaded] = useState(false)
 
  
 
@@ -16,10 +17,15 @@ const Trails = (props) => {
       const trails = await getTrails()
       setAllTrails(trails)
       setQueriedTrails(trails)
+      setLoaded(true)
  
     }
     fetchTrails()
   }, [])
+
+  if (!isLoaded) {
+    return <h1>Loading...</h1>
+}
 
   const handleSearch = event => {
     const newQueriedTrails = allTrails.filter(trail => trail.name.toLowerCase().includes(event.target.value.toLowerCase()))

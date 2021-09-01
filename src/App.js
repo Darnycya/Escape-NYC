@@ -23,7 +23,7 @@ const App = () => {
       <Route exact path="/trails" component={Trails} />
       <Route exact path="/profile" component={Profile} />
       <Route exact path="/create-trail" component={CreateTrail} />
-      <Route exact path="/trails/:name" component={TrailDetail} />
+      <Route exact path="/trails/:id" component={TrailDetail} />
       <Route path="/" component={Footer} />
       
       </>
