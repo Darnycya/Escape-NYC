@@ -34,13 +34,13 @@ const TrailDetail = (props) => {
         <h3>Distance From NYC:</h3>{trail.distanceFromNyc} miles<br />
         <h3>Time To Climb:</h3>{trail.climbingTime} hours<br />
         <h3>Rating:</h3>{trail.rating}<br />
-        </div>
+          </div>
+          <Link className="edit-link" to={`/trails/${trail._id}/edit`}><button className="edit-button">Edit Trail</button></Link>
+    <Link className="delete-link" to={`/trails`}><button className="delete-button" onClick={() => deleteTrail(trail._id)}>Delete Trail</button></Link>
         </>
       }
       
     </div>
-    <button className="edit-button">Edit Trail</button>
-    <Link className="delete-link" to={`/trails`}><button className="delete-button" onClick={() => deleteTrail(trail._id)}>Delete Trail</button></Link>
     </>
   )
 }
