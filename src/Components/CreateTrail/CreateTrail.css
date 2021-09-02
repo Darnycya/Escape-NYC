@@ -22,3 +22,8 @@ padding-right: 80px;
   height: 380px;
   margin: 50px 420px;
 }
+
+::placeholder{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}

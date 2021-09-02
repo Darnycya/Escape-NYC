@@ -10,9 +10,9 @@ const TrailEdit = (props) => {
     name: '',
     trailUrl: '',
     difficulty: '',
-    distanceFromNyc: 0,
-    climbingTime: 0,
-    rating: 0
+    distanceFromNyc: '',
+    climbingTime: '',
+    rating: ''
   })
   
   const [isUpdated, setUpdated] = useState(false)
@@ -109,9 +109,9 @@ const handleSubmit = async (event) => {
           value={trail.difficulty}
           required
           onChange={handleChange}>
-          <option value="easy">Easy</option>
-          <option value="medium">Medium</option>
-         <option value="hard">Hard</option>
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+         <option value="Hard">Hard</option>
         </select>
         <button
           className="submit-button"

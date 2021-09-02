@@ -29,11 +29,11 @@ const TrailDetail = (props) => {
         <img className="trail-detail-image" src={trail.trailUrl} alt={trail.name}></img>
       </div>
       <div className="trail-detail-description">
-        <h3>Name:</h3>{trail.name}<br />
-        <h3>Difficulty:</h3>{trail.difficulty}<br />
-        <h3>Distance From NYC:</h3>{trail.distanceFromNyc} miles<br />
-        <h3>Time To Climb:</h3>{trail.climbingTime} hours<br />
-        <h3>Rating:</h3>{trail.rating}<br />
+        <p className="description-text"><b>Name:</b>  {trail.name}</p><br />
+        <p className="description-text"><b>Difficulty:</b>  {trail.difficulty}</p><br />
+        <p className="description-text"><b>Distance From NYC:</b>  {trail.distanceFromNyc} miles</p><br />
+        <p className="description-text"><b>Time To Climb:</b>  {trail.climbingTime} hours</p><br />
+        <p className="description-text"><b>Rating:</b>  {trail.rating}</p><br />
           
           <Link className="edit-link" to={`/trails/${trail._id}/edit`}><button className="edit-button">Edit Trail</button></Link>
     <Link className="delete-link" to={`/trails`}><button className="delete-button" onClick={() => deleteTrail(trail._id)}>Delete Trail</button></Link>

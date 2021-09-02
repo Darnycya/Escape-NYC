@@ -1,5 +1,7 @@
 .trail-detail-container{
   display: flex;
+  padding: 30px;
+  margin-left: 100px;
 }
 
 .edit-button{
@@ -13,4 +15,15 @@
 .trail-detail-image{
   width: 800px;
   height: 470px;
+}
+
+.trail-detail-description{
+  background-color:rgb(230, 230, 230);
+  width: 400px;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+.description-text{
+
 }

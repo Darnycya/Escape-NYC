@@ -28,8 +28,10 @@ background-color:rgb(230, 230, 230);
   padding: 5px;
   margin: 5px;
   width: 189px;
+  outline: none;
   height: 30px;
   border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
   background-color: white;
   border: 1px solid white;
 }
@@ -38,6 +40,8 @@ background-color:rgb(230, 230, 230);
   padding: 5px;
   margin: 5px;
   width: 189px;
+  font-family: 'Raleway', sans-serif;
+  outline: none;
   height: 30px;
   border-radius: 25px;
   background-color: white;
@@ -54,10 +58,12 @@ button {
 
 .login::placeholder{
   font-size: 14px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .signup::placeholder{
   font-size: 14px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .fake-labels{
