@@ -20,3 +20,18 @@ padding: 20px;
   height: 40px;
   width: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+
+
+  .searchbar{
+    width: 300px;
+    margin: 30px 7px;
+    height: 40px;
+    border-radius: 25px;
+    border: 10px;
+    outline: none;
+  }
+
+
+}
