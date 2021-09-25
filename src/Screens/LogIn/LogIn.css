@@ -69,6 +69,7 @@ button {
 .fake-labels{
   margin-bottom: -20px;
   font-size: 14px;
+  color:black;
 }
 
 .login-button{
@@ -87,4 +88,8 @@ button {
   padding: 5px;
   color: white;
   font-weight: bold;
+}
+
+.signup-form{
+  color:red;
 }

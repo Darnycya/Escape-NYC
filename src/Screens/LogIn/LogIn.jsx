@@ -1,14 +1,83 @@
 import React, { useState, useEffect } from 'react';
-import useForm from "./useForm";
-import validate from "./validateInfo"
 import './LogIn.css';
 
-export default function Login() {
-  const { handleChange, values, handleSubmit, errors } = useForm(validate);
+export default function Login(submitForm, callback) {
+
+  const [values, setValues] = useState({
+    firstname: '',
+    lastname: '',
+    username: '',
+    email: '',
+    password: '',
+    password2: ''
+  });
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  function submitForm() {
+    setIsSubmitted(true);
+  }
+
+  const handleChange = e => {
+    const { name, value } = e.target;
+    setValues({
+      ...values,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    setErrors(validateInfo(values));
+    setIsSubmitting(true);
+  };
+
+  useEffect(
+    () => {
+      if (Object.keys(errors).length === 0 && isSubmitting) {
+        callback();
+      }
+    },
+    [errors]
+  );
+
+
+  function validateInfo(values) {
+    let errors = {}
   
+    if (!values.firstname.trim()) {
+      errors.firstname = "First name required"
+    }
+  
+    if (!values.lastname.trim()) {
+      errors.lastname = "Last name required"
+    }
+  
+    if (!values.username.trim()) {
+      errors.username = "Username required"
+    }
+  
+    if (!values.password) {
+      errors.password = "Password is required"
+    } else if (values.password.length < 6) {
+      errors.password = "Password needs to be 6 character or more"
+    }
+  
+    if (!values.password2) {
+      errors.password2 = "Password is required"
+    } else if (values.password2 !== values.password) {
+      errors.password2 = "Password do not match"
+    }
+  
+    return errors
+  }
 
 
   return (
+  <>
+    {!isSubmitted ? (
     <div className="form-container">
       <form className="login-form">
       <p className="fake-labels"><b>Log In:</b></p><br/>
@@ -80,7 +149,11 @@ export default function Login() {
           <p className="fake-labels">Password should contain more than 6 letters.</p><br />
           <button className="submit-button">Submit</button>
         </form>
-     </div> 
+        </div>
+         ) : (
+          <div className="signup-form">You successfully signed up. </div>
+        )}
+      </>
   )
 }
 

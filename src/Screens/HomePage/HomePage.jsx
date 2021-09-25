@@ -2,9 +2,16 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './HomePage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function HomePage() {
+
+  AOS.init({
+    duration: 1200,
+  })
+
   return (
     <div className="content">
     <Carousel fade>
@@ -52,7 +59,7 @@ export default function HomePage() {
   </Carousel.Item>
     </Carousel>
       
-      <div className="mission-statement">
+      <div className="mission-statement" data-aos="fade-up">
         <div className="iPhoneContainer">
           <img className="iPhone" alt="iphone" src="https://res.cloudinary.com/darnycya/image/upload/v1629500330/EscapeComingSoon_zdixo6.png"></img>
         </div>
