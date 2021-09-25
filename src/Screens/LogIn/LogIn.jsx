@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './LogIn.css';
 
 export default function Login(submitForm, callback) {
@@ -34,14 +35,14 @@ export default function Login(submitForm, callback) {
     setIsSubmitting(true);
   };
 
-  useEffect(
-    () => {
-      if (Object.keys(errors).length === 0 && isSubmitting) {
-        callback();
-      }
-    },
-    [errors]
-  );
+  // useEffect(
+  //   () => {
+  //     if (Object.keys(errors).length === 0 && isSubmitting) {
+  //       callback();
+  //     }
+  //   },
+  //   [errors]
+  // );
 
 
   function validateInfo(values) {
@@ -93,7 +94,7 @@ export default function Login(submitForm, callback) {
           name="password"
           placeholder="Password"
         /><br />
-        <button className="login-button">Log In</button><br />
+        <Link to="/trails"><button className="login-button">Log In</button><br /></Link>
         <p className="fake-labels">Forgot your password?</p><br />
         <p className="fake-labels">Forgot your username?</p><br/>
       </form>
@@ -147,7 +148,7 @@ export default function Login(submitForm, callback) {
         /><br />
         {errors.password2 && <p>{errors.password2}</p>}
           <p className="fake-labels">Password should contain more than 6 letters.</p><br />
-          <button className="submit-button">Submit</button>
+          <Link to="/trails"><button className="submit-button">Submit</button></Link>
         </form>
         </div>
          ) : (

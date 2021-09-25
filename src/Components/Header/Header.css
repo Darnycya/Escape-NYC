@@ -46,3 +46,50 @@ height: 125px;
 .escape-logo{
   margin: 0px 0px 0px 0px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .logo {
+    width: 150px;
+    margin: 0px;
+    height: 75px;
+    }
+
+    .nav-links {
+      margin: 0px;
+    }
+
+    .nav-login {
+      margin: 0px;
+    }
+
+    .signIn-link{
+      color: black;
+      font-size: 12px;
+      font-family: 'Raleway', sans-serif;
+    }
+    
+    .link {
+      font-family: 'Raleway', sans-serif;
+      margin: 10px;
+      font-size: 12px;
+      color: rgb(37, 118, 240);
+      text-decoration: none;
+    }
+    
+    .link:hover{
+      text-decoration: none;
+      color: #236d8b;
+    }
+
+    .navbar {
+      width: 100%;
+      height: 100px;
+      background-color: white;
+      border-bottom: 1px black solid;
+      display: flex;
+      margin-bottom: 5px;
+    }
+}

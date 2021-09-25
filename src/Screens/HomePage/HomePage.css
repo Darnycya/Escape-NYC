@@ -91,3 +91,9 @@ p {
   text-align: right;
   font-weight: bold;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+
+}
