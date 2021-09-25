@@ -27,3 +27,24 @@ padding-right: 80px;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+  .create-trail-container{
+    background-color:rgb(230, 230, 230);
+    width: 355px;
+    height: 380px;
+    margin: 130px 10px;
+  }
+
+  .create-trail-input{
+    width: 300px;
+    margin: 5px;
+    }
+    
+    .create-trail-form{
+      margin-left: 20px;
+     padding-top: 60px;
+    }
+}

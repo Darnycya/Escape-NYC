@@ -114,7 +114,7 @@ const handleSubmit = async (event) => {
          <option value="Hard">Hard</option>
         </select>
         <button
-          className="submit-button"
+          className="save-button"
           type='submit'>Save
         </button>
       </form>
