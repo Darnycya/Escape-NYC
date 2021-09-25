@@ -93,3 +93,47 @@ button {
 .signup-form{
   color:red;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .form-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 355px;
+    background-color:rgb(230, 230, 230);
+    }
+    
+    .login-form {
+      width: 300px;
+      height: 300px;
+      padding: 46px;
+      margin-left: 40px;
+    }
+    
+    .signup-form {
+      width: 355px;
+      height: 400px;
+      padding: 85px;
+      border-top: solid rgb(197, 197, 197) 2px;
+      border-left: none;
+      margin-bottom: 50px;
+    }
+    
+    .submit-button{
+      margin-left: 140px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      padding: 5px;
+      color: white;
+      font-weight: bold;
+      
+    }
+    
+
+
+}
