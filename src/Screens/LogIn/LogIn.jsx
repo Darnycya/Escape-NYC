@@ -109,7 +109,7 @@ export default function Login(submitForm, callback) {
           value={values.firstname}
           onChange={handleChange}
         />
-        {errors.firstname && <p>{errors.firstname}</p>}
+        {/* {errors.firstname && <p className="errors">{errors.firstname}</p>} */}
         <input className="signup"
           placeholder="Last Name"
           id="lastname"
@@ -118,7 +118,7 @@ export default function Login(submitForm, callback) {
           value={values.lastname}
           onChange={handleChange}
         /><br />
-        {errors.lastname && <p>{errors.lastname}</p>}
+        {/* {errors.lastname && <p className="errors">{errors.lastname}</p>} */}
         <input className="signup"
           placeholder="Username"
           id="username"
@@ -127,7 +127,7 @@ export default function Login(submitForm, callback) {
           value={values.username}
           onChange={handleChange}
         /><br />
-        {errors.username && <p>{errors.username}</p>}
+        {/* {errors.username && <p className="errors">{errors.username}</p>} */}
           <p className="fake-labels">Username can only contain letters and numbers.</p><br />
         <input className="signup"
           placeholder="Password"
@@ -137,7 +137,7 @@ export default function Login(submitForm, callback) {
           value={values.password}
           onChange={handleChange}
         />
-        {errors.password && <p>{errors.password}</p>}
+        {/* {errors.password && <p className="errors">{errors.password}</p>} */}
         <input className="signup"
           placeholder="Confirm Password"
           id="password2"
@@ -146,9 +146,16 @@ export default function Login(submitForm, callback) {
           value={values.password2}
           onChange={handleChange}
         /><br />
-        {errors.password2 && <p>{errors.password2}</p>}
+        {/* {errors.password2 && <p className="errors">{errors.password2}</p>} */}
           <p className="fake-labels">Password should contain more than 6 letters.</p><br />
-          <Link to="/trails"><button className="submit-button">Submit</button></Link>
+            <button className="submit-button">Submit</button>
+          
+            {errors.firstname && <p className="errors">*{errors.firstname}</p>}<br />
+            {errors.lastname && <p className="errors">*{errors.lastname}</p>}<br />
+            {errors.username && <p className="errors">*{errors.username}</p>}<br />
+            {errors.password && <p className="errors">*{errors.password}</p>}<br />
+            {errors.password2 && <p className="errors">*{errors.password2}</p>}<br />
+            
         </form>
         </div>
          ) : (

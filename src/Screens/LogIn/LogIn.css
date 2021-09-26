@@ -117,7 +117,7 @@ button {
     
     .signup-form {
       width: 355px;
-      height: 400px;
+      height: 520px;
       padding: 85px;
       border-top: solid rgb(197, 197, 197) 2px;
       border-left: none;
@@ -133,7 +133,9 @@ button {
       font-weight: bold;
       
     }
-    
 
-
+    .errors{
+      margin-bottom:-25px;
+      margin-left: -70px;
+    }
 }
