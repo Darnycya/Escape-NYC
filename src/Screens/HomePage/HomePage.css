@@ -122,7 +122,8 @@ p {
 
   .review-container{
     width: 100%;
-    display: inline;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     background-color: rgb(116, 250, 199)
     
     }
