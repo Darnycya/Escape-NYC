@@ -4,12 +4,12 @@
 .logo {
 width: 400px;
 margin: -5px 0px 0px 100px;
-height: 125px;
+height: 100px;
 }
 
 .navbar {
   width: 100%;
-  height: 140px;
+  height: 105px;
   background-color: white;
   border-bottom: 1px black solid;
   display: flex;
@@ -17,7 +17,7 @@ height: 125px;
 }
 
 .nav-links {
-  margin: 50px 0px 0px 400px;
+  margin: 50px 0px 0px 600px;
 }
 
 .nav-login {
@@ -26,14 +26,13 @@ height: 125px;
 
 .signIn-link{
   color: black;
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Raleway', sans-serif;
 }
 
 .link {
   font-family: 'Raleway', sans-serif;
-  margin: 10px;
-  font-size: 24px;
+  font-size: 18px;
   color: rgb(37, 118, 240);
   text-decoration: none;
 }
