@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+// import Carousel from 'react-bootstrap/Carousel';
 import './HomePage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
@@ -14,50 +14,7 @@ export default function HomePage() {
 
   return (
     <div className="content">
-    <Carousel fade>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Bear_Mountain_Bridge%2C_NY_from_river_level_loking_East.JPG"
-      alt="First slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://scenichudson.org/wp-content/uploads/2019/10/OA_Mohonk-Mt-House-Lemon-Labyrinth_imaginelovinglife.com_-1400x933.jpg"
-      alt="Second slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://i0.wp.com/handluggageonly.co.uk/wp-content/uploads/2018/02/Hand-Luggage-Only-10-6.jpg?resize=1000%2C667&ssl=1"
-      alt="Third slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/newyorkstate/Untitled_design_11__5aa30857-758c-46f4-85b9-9f84bfce6b65.jpg"
-      alt="Fourth slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://www.lakeplacid.com/f/styles/standard_header/public/listing/3060/33214.jpg?itok=740AtG5j"
-      alt="Fifth slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://www.tripsavvy.com/thmb/P-bXun5awTzyyfgnDnG41iO14H4=/667x667/smart/filters:no_upscale()/cascasde-mountain-ny-5a3015dc4e46ba0036642503.jpg"
-      alt="Sixth slide"
-    />
-  </Carousel.Item>
-    </Carousel>
+      <video src="https://res.cloudinary.com/darnycya/video/upload/v1636040486/EscapeVideo_cpmekt.mov" onloadedmetadata="this.muted = true" muted playsinline autoPlay loop  width="100%" height="auto"></video>
       
       <div className="mission-statement" data-aos="fade-up">
         <div className="iPhoneContainer">
