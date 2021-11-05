@@ -43,6 +43,9 @@ height: 500x;
 margin-left: 490px;
 }
 
+.loading-text{
+margin: auto 95vh;
+}
 
 @media only screen and (max-width: 600px) {
 

@@ -38,8 +38,7 @@ margin-left: 150px;
 .review-container{
 width: 100%;
 display: flex;
-background-color: rgb(116, 250, 199)
-/* background-color: rgb(167, 184, 82); */
+background-color: rgb(116, 250, 199);
 }
 
 .review1 {
