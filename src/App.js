@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
@@ -13,7 +13,15 @@ import TrailEdit from './Components/TrailEdit/TrailEdit';
 import './App.css';
 
 const App = () => {
+  // const [token, setToken] = useState();
 
+  // if (!token) {
+  //   return <>
+  //   <Header/>
+  //     <LogIn setToken={setToken} />
+  //     <Footer />
+  //     </>
+  // }
 
 
   return (

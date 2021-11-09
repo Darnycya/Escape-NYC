@@ -3,29 +3,21 @@
   background-color:rgb(230, 230, 230);
 }
 
-.w-100 {
-  width: 100% !important;
-  height: 76vh;
-}
-
 .iPhone{
   height: 500px;
   width: 400px;
-  margin-left: 150px;
 }
 
 .mission-statement{
   padding: 100px 0px;
-  margin: auto;
-  width: 100%;
   align-items: center;
   background-color:rgb(230, 230, 230);
   display: flex;
+  margin: auto 40vh;
 }
 
 .statement{
 width: 500px;
-margin-left: 150px;
 }
 
 .actual-statement{
@@ -33,43 +25,24 @@ margin-left: 150px;
   font-size: 20px;
 }
 
-
-
 .review-container{
 width: 100%;
 display: flex;
+justify-content: space-between;
 background-color: rgb(116, 250, 199);
+padding: 20px;
 }
 
-.review1 {
-margin-bottom: 60px;
-margin-top: 150px;
+.review1,
+.review2,
+.review3 {
 width: 400px;
 height: 500px;
-margin-right: 50px;
-margin-left: 60px;
+display: inline-block;
 background-color: white;
 box-shadow: 10px 10px 8px 10px #888888;
 }
 
-.review2 {
-  margin-bottom: 60px;
-  margin-top: 150px;
-  width: 400px;
-  height: 500px;
-  margin-right: 50px;
-  background-color: white;
-  box-shadow: 10px 10px 8px 10px #888888;
-}
-
-.review3 {
-  margin-bottom: 150px;
-  margin-top: 150px;
-  width: 400px;
-  height: 500px;
-  background-color: white;
-  box-shadow: 10px 10px 8px 10px #888888;
-}
 
 .review-icon {
 width: 200px;
