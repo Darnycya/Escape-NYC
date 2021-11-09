@@ -149,13 +149,13 @@ export default function Login(submitForm, callback) {
         {/* {errors.password2 && <p className="errors">{errors.password2}</p>} */}
           <p className="fake-labels">Password should contain more than 6 letters.</p><br />
             <button className="submit-button">Submit</button>
-          
+          <div className="errors-container">
             {errors.firstname && <p className="errors">*{errors.firstname}</p>}<br />
             {errors.lastname && <p className="errors">*{errors.lastname}</p>}<br />
             {errors.username && <p className="errors">*{errors.username}</p>}<br />
             {errors.password && <p className="errors">*{errors.password}</p>}<br />
             {errors.password2 && <p className="errors">*{errors.password2}</p>}<br />
-            
+            </div>
         </form>
         </div>
          ) : (

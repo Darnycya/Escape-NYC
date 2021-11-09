@@ -31,9 +31,13 @@ label {
 }
 
 .create-trail{
-  color: white;
+  color: black;
+  border-radius: 25px;
+  border: 7px rgb(197, 197, 197) solid;
+  background-color: white;
   padding: 10px;
-  margin-left: 653px;
+  width: 140px;
+  margin: auto 95vh;
   margin-bottom: 100px;
 }
 

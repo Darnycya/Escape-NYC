@@ -94,6 +94,14 @@ button {
   color:red;
 }
 
+.errors{
+  margin-bottom:-25px;
+  margin-left: -20px;
+}
+
+.errors-container{
+  margin-top: -30px;
+}
 
 
 @media only screen and (max-width: 600px) {
