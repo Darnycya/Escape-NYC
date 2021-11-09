@@ -5,11 +5,19 @@
 }
 
 .edit-button{
-  color:white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
 }
 
 .delete-button{
-  color:white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
 }
 
 .trail-detail-image{
@@ -24,9 +32,6 @@
   padding-top: 50px;
 }
 
-.description-text{
-
-}
 
 @media only screen and (max-width: 600px) {
 
