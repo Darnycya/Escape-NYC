@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const apiUrl = `https://escape-nyc-api.herokuapp.com`
+const apiUrl = `https://escape-nyc-api-0c842ac3c094.herokuapp.com/`
 
 export const getTrails = async () => {
   try {
