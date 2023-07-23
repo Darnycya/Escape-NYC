@@ -6,9 +6,10 @@ export default function Footer() {
     <div className="footer">
 
       <div className="footer-icon-div">
-        <a href="https://www.linkedin.com/in/darnycya/"><img className="footer-icon" alt="LinkedIn" src="https://image.flaticon.com/icons/png/512/174/174857.png"></img></a>
-        <a href="https://medium.com/@darnycya"><img className="footer-icon" alt="Medium" src="https://cdn.iconscout.com/icon/free/png-512/medium-47-433328.png"></img></a>
-      <a href="https://www.darnycya.com/"><img className="footer-icon" alt="Darnycya's Website" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpl181MMMyVZeKUOHiYQi3ZTKgPoCFpx-LSg&usqp=CAU"></img></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/darnycya"><img className="footer-icon" alt="github" src="https://img.icons8.com/?size=512&id=63777&format=png"/></a>
+      <a target="_blank" rel="noopener noreferrer"  href="mailto:darnycya@gmail.com"><img className="footer-icon" alt="email" src="https://img.icons8.com/?size=512&id=qyRpAggnV0zH&format=png"/></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@darnycya"><img className="footer-icon" alt="medium" src="https://img.icons8.com/?size=512&id=m8ClhVaNuUH7&format=png"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/darnycya/"><img className="footer-icon" alt="linkedin" src="https://img.icons8.com/?size=512&id=13930&format=png" /></a>
       </div>
       </div>
   )
