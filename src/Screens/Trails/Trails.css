@@ -1,22 +1,14 @@
-.filter{
-  padding: 0px;
-  margin: 0px;
-}
-
-.filter-container{
+.trailPage{
   display: flex;
-  margin-left: 100px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .top-container {
   display: flex;
+  width: 100%;
   margin-top: -5px;
   background-color: rgb(116, 250, 199);
-}
-
-.filters {
-  padding-left: 10px;
-  padding-bottom: -5px;
 }
 
 label {
@@ -37,7 +29,6 @@ label {
   background-color: white;
   padding: 10px;
   width: 140px;
-  margin: auto 95vh;
   margin-bottom: 100px;
 }
 
@@ -45,10 +36,6 @@ label {
 width: 500px;
 height: 500x;
 margin-left: 490px;
-}
-
-.loading-text{
-margin: auto 95vh;
 }
 
 @media only screen and (max-width: 600px) {

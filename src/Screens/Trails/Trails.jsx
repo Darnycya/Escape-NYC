@@ -42,7 +42,7 @@ const Trails = (props) => {
 
 
   return (
-    <>
+    <div className="trailPage">
        <div className="top-container">
        <Search onSubmit={handleSubmit} onChange={handleSearch} />
       </div>
@@ -52,7 +52,7 @@ const Trails = (props) => {
       </div>
 
       <Link to="/create-trail"><button className="create-trail">Create A Trail</button></Link>
-    </>
+    </div>
   )
 }
 
