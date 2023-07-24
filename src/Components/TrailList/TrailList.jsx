@@ -6,11 +6,10 @@ const Trail = (props) => {
   
     return (
       <>
-           <div className="trail">
+        <Link className="trail-link" to={`/trails/${props._id}`}>
+        <div className="trail">
           <div className="trail-image-container">
-          <Link className="trail-link" to={`/trails/${props._id}`}>
                 <img className="trail-image" src={props.trailUrl} alt={props.name} />
-            </Link>
           </div>
           <div className="trail-description-container">
             <h6><b>Name:</b> {props.name}</h6>
@@ -46,6 +45,7 @@ const Trail = (props) => {
             </h6>
             </div>
           </div>
+          </Link>
         </>
     )
 }

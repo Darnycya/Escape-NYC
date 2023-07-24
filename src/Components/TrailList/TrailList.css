@@ -1,9 +1,19 @@
-.trail{
+.trail {
   display: flex;
   width: 440px;
   border-radius: 25px;
   border: 7px rgb(197, 197, 197) solid;
   
+}
+
+.trail-link {
+  text-decoration: none;
+  color: black;
+}
+
+.trail-link:hover {
+  text-decoration: none;
+  color: rgb(116, 250, 199);
 }
 
 .trail-image {
