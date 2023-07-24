@@ -78,6 +78,7 @@ const CreateTrail = (props) => {
         /><br />
          <label className="rating-label" htmlFor="rating">Choose a rating:</label>
         <select
+          className="create-trail-dropdown"
           name="rating"
           id="rating"
           value={trail.rating}
@@ -91,6 +92,7 @@ const CreateTrail = (props) => {
         </select><br />
        <label className="level-label" htmlFor="level">Choose a difficulty:</label>
         <select
+          className="create-trail-dropdown"
           name="difficulty"
           id="difficulty"
           value={trail.difficulty}
@@ -101,7 +103,7 @@ const CreateTrail = (props) => {
          <option value="Hard">Hard</option>
         </select>
         <button
-          className="submit-button"
+          className="create-submit-button"
           type='submit'>Submit
         </button>
       </form>
