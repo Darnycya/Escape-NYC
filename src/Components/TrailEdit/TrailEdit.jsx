@@ -91,6 +91,7 @@ const handleSubmit = async (event) => {
         /><br />
       <label className="rating-label" htmlFor="rating">Choose a rating:</label>
         <select
+          className="create-trail-dropdown"
           name="rating"
           id="rating"
           value={trail.rating}
@@ -104,6 +105,7 @@ const handleSubmit = async (event) => {
         </select><br />
       <label className="level-label" htmlFor="level">Choose a difficulty:</label>
         <select
+          className="create-trail-dropdown"
           name="difficulty"
           id="difficulty"
           value={trail.difficulty}
