@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Redirect } from 'react-router-dom'
 import { getTrail, deleteTrail } from '../../services/trails';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -18,7 +19,17 @@ const TrailDetail = (props) => {
     fetchTrail()
 }, [id])
 
- 
+const [isDeleted, setDeleted] = useState(false)
+  
+const handleDeletion = async (event) => {
+  event.preventDefault()
+  const isDeleted = await deleteTrail(trail._id)
+  setDeleted({ isDeleted })
+}
+
+if (isDeleted) {
+  return <Redirect to={`/trails`} />
+}
 
   return (
 <>
@@ -36,7 +47,7 @@ const TrailDetail = (props) => {
         <p className="description-text"><b>Rating:</b>  {trail.rating}</p><br />
           
           <Link className="edit-link" to={`/trails/${trail._id}/edit`}><button className="edit-button">Edit Trail</button></Link>
-    <Link className="delete-link" to={`/trails`}><button className="delete-button" onClick={() => deleteTrail(trail._id)}>Delete Trail</button></Link>
+    <Link className="delete-link" to={`/trails`}><button className="delete-button" onClick={handleDeletion}>Delete Trail</button></Link>
     </div>
         </>
       }
