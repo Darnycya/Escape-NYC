@@ -8,10 +8,10 @@ const CreateTrail = (props) => {
   const [trail, setTrail] = useState({
     name: '',
     trailUrl: '',
-    difficulty: '',
+    difficulty: 'Easy',
     distanceFromNyc: '',
     climbingTime: '',
-    rating: ''
+    rating: '1'
   })
   
   const [isCreated, setCreated] = useState(false)
@@ -33,16 +33,14 @@ const CreateTrail = (props) => {
   
   if (isCreated) {
     return <Redirect to={`/trails`} />
-  } else {
-    console.log('Something went wrong girl')
-}
+  }
 
-  
   return (
     <div className="create-trail-container">
      <form className="create-trail-form" autoComplete="off" onSubmit={handleSubmit}>
         <p className="fake-labels"><b>Create A Trail:</b></p><br />
-        <input
+        <p className="required-fields">All fields are required.</p>
+         <input
           className="create-trail-input"
           placeholder="Name"
           value={trail.name}
@@ -51,7 +49,8 @@ const CreateTrail = (props) => {
           autoFocus
           onChange={handleChange}
         /><br />
-         <input
+        <input
+          type="url"
           className="create-trail-input"
           placeholder='Image URL'
           value={trail.trailUrl}
@@ -59,7 +58,7 @@ const CreateTrail = (props) => {
           required
           onChange={handleChange}
         /><br />
-        <input
+         <input
           className="create-trail-input"
           type="number"
           placeholder="Distance From NYC(miles)"
@@ -68,16 +67,16 @@ const CreateTrail = (props) => {
           required
           onChange={handleChange}
         /><br />
-        <input
+         <input
           className="create-trail-input"
           type="number"
           placeholder="Time to Climb(hours)"
-          value={trail.climbingTime}
+          value={parseInt(trail.climbingTime)}
           name='climbingTime'
           required
           onChange={handleChange}
         /><br />
-      <label className="rating-label" htmlFor="rating">Choose a rating:</label>
+         <label className="rating-label" htmlFor="rating">Choose a rating:</label>
         <select
           name="rating"
           id="rating"
@@ -90,7 +89,7 @@ const CreateTrail = (props) => {
           <option value="4">4 Star</option>
           <option value='5'>5 Star</option>
         </select><br />
-      <label className="level-label" htmlFor="level">Choose a difficulty:</label>
+       <label className="level-label" htmlFor="level">Choose a difficulty:</label>
         <select
           name="difficulty"
           id="difficulty"

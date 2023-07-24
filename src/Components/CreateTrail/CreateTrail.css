@@ -28,6 +28,10 @@ padding-right: 80px;
   font-size: 14px;
 }
 
+.required-fields{
+  font-size: 12px;
+}
+
 
 @media only screen and (max-width: 600px) {
 
