@@ -31,6 +31,7 @@ display: flex;
 justify-content: space-between;
 background-color: rgb(116, 250, 199);
 padding: 20px;
+margin-bottom: 20px;
 }
 
 .review1,
