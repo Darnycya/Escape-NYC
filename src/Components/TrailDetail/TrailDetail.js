@@ -46,8 +46,8 @@ if (isDeleted) {
         <p className="description-text"><b>Time To Climb:</b>  {trail.climbingTime} hours</p><br />
         <p className="description-text"><b>Rating:</b>  {trail.rating}</p><br />
           
-          <Link className="edit-link" to={`/trails/${trail._id}/edit`}><button className="edit-button">Edit Trail</button></Link>
-    <Link className="delete-link" to={`/trails`}><button className="delete-button" onClick={handleDeletion}>Delete Trail</button></Link>
+          <Link className="edit-link" to={`/trails/${trail._id}/edit`}><button className="edit-delete-button">Edit Trail</button></Link>
+    <Link className="delete-link" to={`/trails`}><button className="edit-delete-button" onClick={handleDeletion}>Delete Trail</button></Link>
     </div>
         </>
       }

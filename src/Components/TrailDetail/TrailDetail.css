@@ -4,20 +4,17 @@
   margin-left: 100px;
 }
 
-.edit-button{
+.edit-delete-button{
   font-family: 'Raleway', sans-serif;
   font-size: 13px;
-  padding: 5px;
   color: white;
   font-weight: bold;
-}
-
-.delete-button{
-  font-family: 'Raleway', sans-serif;
-  font-size: 13px;
-  padding: 5px;
+  padding: 2px 10px;
   color: white;
+  background-color: black;
   font-weight: bold;
+  border-radius: 25px;
+  margin: 0px 20px;
 }
 
 .trail-detail-image{
