@@ -3,7 +3,6 @@
   width: 440px;
   border-radius: 25px;
   border: 7px rgb(197, 197, 197) solid;
-  
 }
 
 .trail-link {
@@ -33,15 +32,11 @@
   height: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
 .trail{
-  border: 1px solid black;
-  display: inline;
   width: 360px;
-  border-radius: 25px;
-  border: 7px rgb(197, 197, 197) solid;
-  
+  flex-direction: column;
 }
 
 .trail-image {
@@ -49,15 +44,5 @@
   height: 300px;
   padding: 0px;
   margin: 10px 7px;
-  border-radius: 25px;
-}
-
-.trail-description-container{
-  padding: 10px;
-}
-
-.star{
-  width: 20px;
-  height: 20px;
 }
 }
