@@ -5,12 +5,13 @@ import './LogIn.css';
 export default function Login() {
 
   const [values, setValues] = useState({
+    username: '',
+    password: '',
     firstname: '',
     lastname: '',
-    username: '',
-    email: '',
-    password: '',
-    password2: ''
+    firstTimeUsername: '',
+    firstTimePassword: '',
+    firstTimePassword2: ''
   });
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -48,18 +49,16 @@ export default function Login() {
     if (!values.lastname.trim()) {
       errors.lastname = "Last name required"
     }
-    if (!values.username.trim()) {
-      errors.username = "Username required"
+    if (!values.firstTimeUsername.trim()) {
+      errors.firstTimeUsername = "Username required"
     }
-    if (!values.password) {
-      errors.password = "Password is required"
-    } else if (values.password.length < 6) {
+    if (!values.firstTimePassword) {
+      errors.firstTimePassword = "Password is required"
+    } else if (values.firstTimePassword.length < 6) {
       errors.password = "Password needs to be 6 character or more"
     }
-    if (!values.password2) {
-      errors.password2 = "Password is required"
-    } else if (values.password2 !== values.password) {
-      errors.password2 = "Passwords do not match"
+   if (values.firstTimePassword2 !== values.password) {
+      errors.firstTimePassword2 = "Passwords do not match"
     }
     return errors
   }
@@ -76,13 +75,17 @@ export default function Login() {
           type="text"
           name="username"
           placeholder="Username"
+          value={values.username}
+          onChange={handleChange}
         /><br />
           <input className="login"
           required
           id="password"
           type="password"
           name="password"
-          placeholder="Password"
+            placeholder="Password"
+            value={values.password}
+          onChange={handleChange}
         /><br />
         <button className="login-button">Log In</button><br />
         <p className="fake-labels">Forgot your password?</p><br />
@@ -113,29 +116,29 @@ export default function Login() {
           <input className="signup"
           required
           placeholder="Username"
-          id="username"
+          id="firstTimeUsername"
           type="text"
-          name="username"
-          value={values.username}
+          name="firstTimeUsername"
+          value={values.firstTimeUsername}
           onChange={handleChange}
         /><br />
           <p className="fake-labels">Username can only contain letters and numbers.</p><br />
           <input className="signup"
           required
           placeholder="Password"
-          id="password"
+          id="firstTimePassword"
           type="password"
-          name="password"
-          value={values.password}
+          name="firstTimePassword"
+          value={values.firstTimePassword}
           onChange={handleChange}
         />
        <input className="signup"
           required
           placeholder="Confirm Password"
-          id="password2"
+          id=" firstTimePassword2"
           type="password"
-          name="password2"
-          value={values.password2}
+          name=" firstTimePassword2"
+          value={values.firstTimePassword2}
           onChange={handleChange}
         /><br />
           <p className="fake-labels">Password should contain more than 6 letters.</p><br />
@@ -144,8 +147,8 @@ export default function Login() {
             {errors.firstname && <p className="errors">*{errors.firstname}</p>}<br />
             {errors.lastname && <p className="errors">*{errors.lastname}</p>}<br />
             {errors.username && <p className="errors">*{errors.username}</p>}<br />
-            {errors.password && <p className="errors">*{errors.password}</p>}<br />
-            {errors.password2 && <p className="errors">*{errors.password2}</p>}<br />
+            {errors.firstTimePassword && <p className="errors">*{errors.firstTimePassword}</p>}<br />
+            {errors.firstTimePassword2 && <p className="errors">*{errors.firstTimePassword2}</p>}<br />
             </div>
         </form>
          : 
