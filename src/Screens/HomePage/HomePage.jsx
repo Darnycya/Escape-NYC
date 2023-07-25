@@ -1,5 +1,4 @@
 import React from 'react';
-// import Carousel from 'react-bootstrap/Carousel';
 import './HomePage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
