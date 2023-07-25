@@ -15,11 +15,12 @@ label {
  margin-left: 5px;
 }
 
-.trails{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.trails-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  margin: 100px 50px;
+  margin: 100px 50px 100px 200px; 
 }
 
 .create-trail{
@@ -40,16 +41,7 @@ margin-left: 490px;
 
 @media only screen and (max-width: 800px) {
 
-  .trails{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    margin: 100px 10px;
-  }
-
   .create-trail{
-    color: white;
-    padding: 10px;
     margin: 30px 160px;
   }
   
