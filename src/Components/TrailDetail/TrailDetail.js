@@ -36,7 +36,7 @@ if (isDeleted) {
     <div className="trail-detail-container">
       {trail !== null &&
         <>
-      <div className="trail-image-detail">
+      <div className="trail-image-container">
         <img className="trail-detail-image" src={trail.trailUrl} alt={trail.name}></img>
       </div>
       <div className="trail-detail-description">
