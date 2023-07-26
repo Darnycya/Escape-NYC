@@ -1,68 +1,80 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Escape NYC
 
-## Available Scripts
+<p align="center">
+  <img src="https://res.cloudinary.com/darnycya/image/upload/v1690413810/ezgif-5-a568b15f58_brzevp.gif"></img>
+  </p>
+  
+Escape NYC is a full CRUD React app that allows users to submit hiking trails that they have found to help encourage New Yorkers to leave the city and get some fresh air during quarantine. The API that is being edited on the application is: <a target=”_blank” href="https://github.com/Darnycya/escape-nyc-api">.
 
-In the project directory, you can run:
 
-### `yarn start`
+## Link To Editer
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<a href="https://escape-nyc-app.netlify.app/">Click Here</a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Sample of API 
 
-### `yarn test`
+```
+{
+      "name": "Anthony's Nose",
+      "trailUrl": "https://hikethehudsonvalley.com/wp-content/uploads/2015/05/Spring2014_RWAN_955.jpg",
+      "difficulty": "Medium",
+      "distanceFromNyc": 40,
+      "climbingTime": 2.5,
+      "rating": 4
+    }
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Sample of the CRUD Frunctionality
 
-### `yarn build`
+```
+import axios from 'axios'
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+const apiUrl = `https://escape-nyc-api-0c842ac3c094.herokuapp.com`
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+export const getTrails = async () => {
+  try {
+    const response = await axios(`${apiUrl}/trails`)
+    const trails = response.data
+    return trails
+  } catch (error) {
+    throw error
+  }
+}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+export const getTrail = async id => {
+  try {
+    const response = await axios(`${apiUrl}/trails/${id}`)
+    const trail = response.data
+    return trail
+  } catch (error) {
+    throw error
+  }
+}
 
-### `yarn eject`
+export const createTrail = async trail => {
+  try {
+    const response = await axios.post(`${apiUrl}/trails`, trail)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+export const updateTrail = async (id, trail) => {
+  try {
+    const response = await axios.put(`${apiUrl}/trails/${id}`, trail)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+export const deleteTrail = async id => {
+  try {
+    const response = await axios.delete(`${apiUrl}/trails/${id}`)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
+```
