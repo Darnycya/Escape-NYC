@@ -7,7 +7,7 @@
 Escape NYC is a full CRUD React app that allows users to submit hiking trails that they have found to help encourage New Yorkers to leave the city and get some fresh air during quarantine. The API that is being edited on the application is: <a target=”_blank” href="https://github.com/Darnycya/escape-nyc-api">.
 
 
-## Link To Editer
+## Link To Escape NYC
 
 <a href="https://escape-nyc-app.netlify.app/">Click Here</a>
 
