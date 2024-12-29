@@ -92,12 +92,18 @@ background-color:rgb(230, 230, 230);
 }
 
 .errors{
-  margin-bottom:-25px;
   margin-left: -20px;
+  color:red;
+  padding: 20px;
 }
 
 .errors-container{
   margin-top: -30px;
+  color: red;
+}
+
+.login-errors {
+  color:red;
 }
 
 
