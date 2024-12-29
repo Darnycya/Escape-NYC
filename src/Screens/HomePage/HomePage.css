@@ -1,23 +1,30 @@
 .content {
   margin-top: -5px;
   background-color:rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .iPhone{
   height: 500px;
   width: 400px;
+  padding: 50px;
 }
 
 .mission-statement{
+  width: 100%;
+  justify-content: center;
   padding: 100px 0px;
   align-items: center;
   background-color:rgb(230, 230, 230);
   display: flex;
-  margin: auto 40vh;
+  flex-wrap: wrap;
 }
 
 .statement{
-width: 500px;
+  width: 500px;
+  padding: 50px;
 }
 
 .actual-statement{
@@ -28,18 +35,21 @@ width: 500px;
 .review-container{
 width: 100%;
 display: flex;
-justify-content: space-between;
+flex-wrap: wrap;
+gap: 60px;
+padding: 100px 50px;
+justify-content: center;
 background-color: rgb(116, 250, 199);
-padding: 20px;
-margin-bottom: 20px;
 }
 
-.review1,
-.review2,
-.review3 {
-width: 400px;
+.review {
+  width: 21rem;
 height: 500px;
-display: inline-block;
+display: flex;
+padding: 0 20px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 background-color: white;
 box-shadow: 10px 10px 8px 10px #888888;
 }
@@ -49,12 +59,7 @@ box-shadow: 10px 10px 8px 10px #888888;
 width: 200px;
 height: 200px;
 border-radius: 50%;
-margin: 10px 0px 50px 100px;
-}
-
-.review-words{
-  width: 350px;
-  margin-left: 25px;
+margin-bottom: 20px;
 }
 
 p {
@@ -64,87 +69,4 @@ p {
 .names {
   text-align: right;
   font-weight: bold;
-}
-
-
-@media only screen and (max-width: 800px) {
-  .iPhone{
-    height: 400px;
-    width: 300px;
-    margin: 50px 40px;
-  }
-  
-  .mission-statement{
-    padding: 100px 0px;
-    margin: auto;
-    width: 100%;
-    align-items: center;
-    background-color:rgb(230, 230, 230);
-    display: inline;
-  }
-  
-  .statement{
-  width: 100%;
-  margin-left: 0px;
-  padding: 20px;
-  }
-  
-  .actual-statement{
-    text-align: justify;
-    font-size: 20px;
-  }
-
-  .review-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    background-color: rgb(116, 250, 199)
-    
-    }
-    
-    .review1 {
-    margin: 40px 10px;
-    width: 95%;
-    height: 500px;
-    background-color: white;
-    box-shadow: 1px 2px 8px 3px #888888;
-    }
-    
-    .review2 {
-      margin: 40px 10px;
-      width: 95%;
-      height: 500px;
-      background-color: white;
-      box-shadow: 1px 2px 8px 3px #888888;
-    }
-    
-    .review3 {
-      margin: 40px 10px;
-      width: 95%;
-      height: 500px;
-      background-color: white;
-      box-shadow: 1px 2px 8px 3px #888888;
-    }
-    
-    .review-icon {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 20px 0px 50px 75px;
-    }
-    
-    .review-words{
-      width: 310px;
-      margin-left: 20px;
-    }
-    
-    p {
-      text-align: justify;
-    }
-    
-    .names {
-      text-align: right;
-      font-weight: bold;
-    }
-
 }

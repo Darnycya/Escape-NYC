@@ -17,7 +17,7 @@ export default function HomePage() {
       
       <div className="mission-statement" data-aos="fade-up">
         <div className="iPhoneContainer">
-          <img className="iPhone" alt="iphone" src="https://res.cloudinary.com/darnycya/image/upload/v1629500330/EscapeComingSoon_zdixo6.png"></img>
+          <img className="iPhone" alt="iphone" src="https://res.cloudinary.com/darnycya/image/upload/v1735505272/EscapeComingSoon_zdixo6_s9d6vg.png"></img>
         </div>
         <div className="statement">
           <p className="actual-statement">With lockdowns happening every which way, NYCs need a breath of fresh air and a dose of a new scenery. And luckily, we’re all here to help each other. On EscapeNYC, you can find hiking trails in NY that are close by. Here, we make it easy for you to plan out your nature day to escape the concrete jungle. And if you’d like to lend a helping hand, you can post your favorite trails that you have found that should be explored by your fellow New Yorkers. <b>Happy trailing!</b> </p>
@@ -25,7 +25,7 @@ export default function HomePage() {
         </div>
       
       <div className="review-container">
-        <div className="review1">
+        <div className="review">
           <img className='review-icon' alt="Beyonce" src="https://i.pinimg.com/originals/08/1e/8d/081e8df05d58af26f39ef168e9f3815b.jpg"></img>
           <div className="review-words"><p>"I was truly losing my mind in the city. There were maybe like 3 trees and they all were in Central Park. But then I found EscapeNYC and started leaving the city and exploring the rest of NY and it is so beautiful."<br />
             <br /></p>
@@ -35,7 +35,7 @@ export default function HomePage() {
         </div>
 
 
-        <div className="review2">
+        <div className="review">
           <img className='review-icon' alt="Lance" src="https://www.charityprotravel.com/sites/default/files/styles/news_large/public/field/image/lancebass.jpg?itok=i1zcIV0y"></img>
           
           <div className="review-words"><p>"When I lived in Hollywood I would hike almost every morning. I came to visit NYC for a week and was dying on this flat surface. My friend told me about EscapeNYC and I found such beautiful hikes."<br />
@@ -45,7 +45,7 @@ export default function HomePage() {
         </div>
 
 
-        <div className="review3">
+        <div className="review">
           <img className='review-icon' alt="Some guy" src="https://qph.fs.quoracdn.net/main-qimg-892c66e7940edc2760418aed185d379c"></img>
           <div className="review-words"><p>"I'm a huge techie and I love checking out new web apps and I came across EscapeNYC. This site is so cool and the UI/UX is steller. The next time I visit NYC I'm going to definitely use this app. It's so easy to search and find new trails."<br />
             <br /></p>
