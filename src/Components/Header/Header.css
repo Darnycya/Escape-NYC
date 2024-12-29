@@ -2,22 +2,23 @@
 
 .logo {
   width: 400px;
-  margin: -5px 0px 0px 100px;
   height: 100px;
 }
 
-.navbar {
+.header {
   width: 100%;
-  height: 105px;
   background-color: white;
   border-bottom: 1px black solid;
   display: flex;
-  margin-bottom: 5px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-links {
-  margin-left: auto;
-  margin-right: 20px;
+display: flex;
+gap: 50px;
 }
 
 .signIn-link {
@@ -31,35 +32,11 @@
   color: black;
   font-size: 18px;
   text-decoration: none;
-  margin-right: 100px;
 }
 
-@media only screen and (max-width: 800px) {
-  .logo {
-    width: 150px;
-    margin: 0px;
-    height: 75px;
-  }
 
-  .signIn-link {
-    color: black;
-    font-size: 12px;
-    font-family: "Raleway", sans-serif;
-  }
-
-  .trails-link {
-    font-family: "Raleway", sans-serif;
-    color: black;
-    font-size: 12px;
-    text-decoration: none;
-  }
-
-  .navbar {
-    width: 100%;
-    height: 105px;
-    background-color: white;
-    border-bottom: 1px black solid;
-    display: flex;
-    margin-bottom: 5px;
-  }
+@media only screen and (max-width: 440px) {
+.logo {
+  width: 300px;
 }
+} 

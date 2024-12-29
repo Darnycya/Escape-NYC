@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Header({ loggedInUser }) {
   return (
-    <div className="navbar">
+    <div className="header">
       <Link className="escape-logo" to="/">
         <img
           className="logo"

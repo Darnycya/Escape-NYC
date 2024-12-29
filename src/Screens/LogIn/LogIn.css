@@ -1,25 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+.form-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+}
 
 .form-container {
 display: flex;
-margin-left: 250px;
-margin-top: 50px;
-margin-bottom: 50px;
-width: 65%;
 background-color:rgb(230, 230, 230);
 }
 
 .login-form {
-  width: 380px;
-  height: 400px;
-  padding: 50px;
-  margin-left: 40px;
+margin: 50px;
 }
 
 .signup-form {
-  width: 500px;
-  height: 400px;
   padding: 50px;
   border-left: solid rgb(197, 197, 197) 2px;
 }

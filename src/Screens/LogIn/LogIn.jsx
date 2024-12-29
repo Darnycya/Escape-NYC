@@ -101,6 +101,7 @@ export default function Login({ setLoggedInUser }) {
 
   return (
     <>
+      <div className="form-page">
       <div className="form-container">
         <form className="login-form" onSubmit={handleSignIn}>
           <p className="fake-labels">
@@ -225,7 +226,8 @@ export default function Login({ setLoggedInUser }) {
         ) : (
           <div className="signup-form">Sign up successful. Please log in.</div>
         )}
-      </div>
+        </div>
+        </div>
     </>
   );
 }
