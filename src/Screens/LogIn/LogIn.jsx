@@ -1,44 +1,45 @@
-import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom';
-import './LogIn.css';
+import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
+import "./LogIn.css";
 
-export default function Login() {
+export default function Login({ setLoggedInUser }) {
   const [values, setValues] = useState({
-    username: '',
-    password: '',
-    firstname: '',
-    lastname: '',
-    firstTimeUsername: '',
-    firstTimePassword: '',
-    firstTimePassword2: ''
+    username: "",
+    password: "",
+    firstname: "",
+    lastname: "",
+    firstTimeUsername: "",
+    firstTimePassword: "",
+    firstTimePassword2: "",
   });
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSignedIn, setIsSignedIn] = useState(false);
-  const [loginMessage, setLoginMessage] = useState(''); // New state for messages
+  const [loginMessage, setLoginMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues({
       ...values,
-      [name]: value
+      [name]: value,
     });
-    setLoginMessage(''); // Clear message on input change
+    setLoginMessage(""); // Clear message on input change
   };
 
   const handleSignUp = (e) => {
     e.preventDefault();
-  
+
     // Validate input fields
     const validationErrors = validateInfo(values);
-  
+
     // Check if the username already exists
     const usernameExists = localStorage.getItem(values.firstTimeUsername);
     if (usernameExists) {
-      validationErrors.firstTimeUsername = 'Username already exists. Please choose another.';
+      validationErrors.firstTimeUsername =
+        "Username already exists. Please choose another.";
     }
-  
+
     if (Object.keys(validationErrors).length === 0) {
       // Save to localStorage if validation passes
       localStorage.setItem(
@@ -46,17 +47,15 @@ export default function Login() {
         JSON.stringify({
           firstname: values.firstname,
           lastname: values.lastname,
-          password: values.firstTimePassword
+          password: values.firstTimePassword,
         })
       );
       setIsSubmitted(true);
-      setLoginMessage('Sign up successful! Please log in.');
     } else {
       setErrors(validationErrors);
-      setLoginMessage(''); // Clear any success message if there are errors
+      setLoginMessage("");
     }
   };
-  
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -64,12 +63,13 @@ export default function Login() {
     if (storedUser) {
       const userData = JSON.parse(storedUser);
       if (userData.password === values.password) {
+        setLoggedInUser(values.username);
         setIsSignedIn(true);
       } else {
-        setLoginMessage('Incorrect password.');
+        setLoginMessage("Incorrect password.");
       }
     } else {
-      setLoginMessage('Username not found.');
+      setLoginMessage("Username not found.");
     }
   };
 
@@ -80,21 +80,21 @@ export default function Login() {
   function validateInfo(values) {
     let errors = {};
     if (!values.firstname.trim()) {
-      errors.firstname = 'First name required';
+      errors.firstname = "First name required";
     }
     if (!values.lastname.trim()) {
-      errors.lastname = 'Last name required';
+      errors.lastname = "Last name required";
     }
     if (!values.firstTimeUsername.trim()) {
-      errors.firstTimeUsername = 'Username required';
+      errors.firstTimeUsername = "Username required";
     }
     if (!values.firstTimePassword) {
-      errors.firstTimePassword = 'Password is required';
+      errors.firstTimePassword = "Password is required";
     } else if (values.firstTimePassword.length < 6) {
-      errors.firstTimePassword = 'Password needs to be 6 characters or more';
+      errors.firstTimePassword = "Password needs to be 6 characters or more";
     }
     if (values.firstTimePassword2 !== values.firstTimePassword) {
-      errors.firstTimePassword2 = 'Passwords do not match';
+      errors.firstTimePassword2 = "Passwords do not match";
     }
     return errors;
   }
@@ -131,7 +131,7 @@ export default function Login() {
           <br />
           <button className="login-button">Log In</button>
           <br />
-          {loginMessage && <p className="login-errors">{loginMessage}</p>} {/* Display login messages */}
+          {loginMessage && <p className="login-errors">{loginMessage}</p>}
           <p className="fake-labels">Forgot your password?</p>
           <br />
           <p className="fake-labels">Forgot your username?</p>
@@ -176,7 +176,9 @@ export default function Login() {
               onChange={handleChange}
             />
             <br />
-            <p className="fake-labels">Username can only contain letters and numbers.</p>
+            <p className="fake-labels">
+              Username can only contain letters and numbers.
+            </p>
             <br />
             <input
               className="signup"
@@ -199,15 +201,25 @@ export default function Login() {
               onChange={handleChange}
             />
             <br />
-            <p className="fake-labels">Password should contain more than 6 letters.</p>
+            <p className="fake-labels">
+              Password should contain more than 6 letters.
+            </p>
             <br />
             <button className="submit-button">Submit</button>
             <div className="errors-container">
-              {errors.firstname && <p className="errors">*{errors.firstname}</p>}
+              {errors.firstname && (
+                <p className="errors">*{errors.firstname}</p>
+              )}
               {errors.lastname && <p className="errors">*{errors.lastname}</p>}
-              {errors.firstTimeUsername && <p className="errors">*{errors.firstTimeUsername}</p>}
-              {errors.firstTimePassword && <p className="errors">*{errors.firstTimePassword}</p>}
-              {errors.firstTimePassword2 && <p className="errors">*{errors.firstTimePassword2}</p>}
+              {errors.firstTimeUsername && (
+                <p className="errors">*{errors.firstTimeUsername}</p>
+              )}
+              {errors.firstTimePassword && (
+                <p className="errors">*{errors.firstTimePassword}</p>
+              )}
+              {errors.firstTimePassword2 && (
+                <p className="errors">*{errors.firstTimePassword2}</p>
+              )}
             </div>
           </form>
         ) : (
