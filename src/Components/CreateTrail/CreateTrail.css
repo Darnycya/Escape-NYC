@@ -1,57 +1,44 @@
-.create-trail-input{
-width: 300px;
-margin: 5px;
-height: 30px;
-border-radius: 25px;
-font-family: 'Raleway', sans-serif;
-background-color: white;
-border: 1px solid white;
-padding-left: 10px;
+.create-trail-input {
+  width: 300px;
+  margin: 5px;
+  height: 30px;
+  border-radius: 25px;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  border: 1px solid white;
 }
 
-.create-trail-dropdown{
-border-radius: 25px;
-font-family: 'Raleway', sans-serif;
-background-color: white;
-border: 1px solid white;
-padding: 2px;
+.create-trail-dropdown {
+  border-radius: 25px;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  border: 1px solid white;
+  padding: 2px;
 }
 
-.level-label{
-padding-right: 80px;
+.create-trail-form {
+  background-color: rgb(230, 230, 230);
+  padding: 50px 100px;
 }
 
-.rating-label{
-  padding-right: 115px;
-  }
-
-.create-trail-form{
-  background-color:rgb(230, 230, 230);
-  width: 600px;
-  height: 400px;
-  margin: 0 auto;
-  padding: 60px 0px 60px 150px;
+.create-trail-container {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
 }
 
-.create-trail-container{
- height: 78vh;
- padding-top: 100px;
-}
-
-::placeholder{
-  font-family: 'Raleway', sans-serif;
+::placeholder {
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
 
-.required-fields{
+.required-fields {
   font-size: 12px;
 }
 
-.create-submit-button{
-  float: right;
-  font-family: 'Raleway', sans-serif;
+.create-submit-button {
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
-  margin: 10px 140px;
   color: rgb(252, 249, 249);
   font-weight: bold;
   background-color: black;
@@ -62,14 +49,25 @@ padding-right: 80px;
   border-radius: 25px;
 }
 
-@media only screen and (max-width: 800px) {
-    .create-trail-form{
-    padding-left: 20%;
-    }
+.dropdowns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
 
-    .create-submit-button{
-      float: none;
-      margin-left: 50%;
-    }
+.create-submit-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
 
+@media only screen and (max-width: 620px) {
+  .create-trail-form {
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .create-trail-form {
+    padding: 20px;
+  }
 }
