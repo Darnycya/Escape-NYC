@@ -1,18 +1,17 @@
-.searchbar{
+.searchbar {
   width: 500px;
-  margin: 50px 0px 50px 100px;
   height: 40px;
   border-radius: 25px;
   border: 10px;
   outline: none;
 }
 
-::placeholder{
-font-size: 24px;
-padding: 20px;
+::placeholder {
+  font-size: 24px;
+  padding: 20px;
 }
 
-.search-button{
+.search-button {
   border-radius: 50%;
   background-color: white;
   border: 1px solid white;
@@ -22,9 +21,7 @@ padding: 20px;
 }
 
 @media only screen and (max-width: 800px) {
-
-
-  .searchbar{
+  .searchbar {
     width: 300px;
     margin: 30px 7px;
     height: 40px;
@@ -32,6 +29,4 @@ padding: 20px;
     border: 10px;
     outline: none;
   }
-
-
 }
