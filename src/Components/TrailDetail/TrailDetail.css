@@ -1,12 +1,17 @@
-.trail-detail-container{
+.trail-detail-page {
   display: flex;
-  padding: 60px;
-  width: 90%;
-  margin-left: 70px;
+  justify-content: center;
+  padding: 50px 0;
+  margin-bottom: 50px;
 }
 
-.edit-delete-button{
-  font-family: 'Raleway', sans-serif;
+.trail-detail-container {
+  display: flex;
+  width: 90%;
+}
+
+.edit-delete-button {
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   color: white;
   font-weight: bold;
@@ -15,51 +20,42 @@
   background-color: black;
   font-weight: bold;
   border-radius: 25px;
-  margin: 0px 20px;
 }
 
-.trail-detail-image-container{
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.trail-detail-image-container {
   width: 80%;
   height: 500px;
 }
 
-.trail-detail-image{
+.trail-detail-image {
   width: 100%;
   height: 100%;
 }
 
-.trail-detail-description{
-  background-color:rgb(230, 230, 230);
-  width: 400px;
-  height: 500px;
-  padding-left: 100px;
-  padding-top: 50px;
+.description-text {
+  margin: 0;
 }
 
+.trail-detail-description {
+  background-color: rgb(230, 230, 230);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-@media only screen and (max-width: 800px) {
-
-  .trail-detail-container{
-    display: inline;
-    padding: 30px;
-  }
-  
-  .trail-detail-image{
-    width: 100%;
-    height: 470px;
-    margin-top: -30px;
+@media only screen and (max-width: 1000px) {
+  .trail-detail-container {
+    flex-direction: column;
   }
 
-  .trail-detail-image-container{
+  .trail-detail-image-container {
     width: 100%;
-  }
-  
-  .trail-detail-description{
-    background-color:rgb(230, 230, 230);
-    width: 100%;
-    padding-left: 100px;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin-bottom: -23px;
   }
 }
