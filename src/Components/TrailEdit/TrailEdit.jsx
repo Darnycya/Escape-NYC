@@ -51,7 +51,7 @@ const handleSubmit = async (event) => {
 
   
   return (
-    <div className="create-trail-container">
+    <div className="save-trail-container">
      <form className="create-trail-form" autoComplete="off" onSubmit={handleSubmit}>
         <p className="fake-labels"><b>Update {trail.name}</b></p><br />
         <input
@@ -89,6 +89,7 @@ const handleSubmit = async (event) => {
           required
           onChange={handleChange}
         /><br />
+        <div className="dropdowns">
       <label className="rating-label" htmlFor="rating">Choose a rating:</label>
         <select
           className="create-trail-dropdown"
@@ -102,7 +103,9 @@ const handleSubmit = async (event) => {
           <option value="3">3 Star</option>
           <option value="4">4 Star</option>
           <option value='5'>5 Star</option>
-        </select><br />
+          </select>
+          </div>
+          <div className="dropdowns">
       <label className="level-label" htmlFor="level">Choose a difficulty:</label>
         <select
           className="create-trail-dropdown"
@@ -114,11 +117,15 @@ const handleSubmit = async (event) => {
           <option value="Easy">Easy</option>
           <option value="Medium">Medium</option>
          <option value="Hard">Hard</option>
-        </select>
+          </select>
+          </div>
+        <br />
+        <div className="save-button-container">
         <button
           className="save-button"
           type='submit'>Save
-        </button>
+          </button>
+          </div>
       </form>
     </div>
   )
