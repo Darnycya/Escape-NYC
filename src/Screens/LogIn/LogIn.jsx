@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import "./LogIn.css";
+import CryptoJS from "crypto-js";
 
 export default function Login({ setLoggedInUser }) {
   const [values, setValues] = useState({
@@ -12,6 +13,15 @@ export default function Login({ setLoggedInUser }) {
     firstTimePassword: "",
     firstTimePassword2: "",
   });
+
+  const encryptPassword = (password) => {
+    return CryptoJS.AES.encrypt(password, 'secret key 123').toString();
+  };
+
+  const decryptPassword = (ciphertext) => {
+    const bytes = CryptoJS.AES.decrypt(ciphertext, 'secret key 123');
+    return bytes.toString(CryptoJS.enc.Utf8);
+  };
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -47,7 +57,7 @@ export default function Login({ setLoggedInUser }) {
         JSON.stringify({
           firstname: values.firstname,
           lastname: values.lastname,
-          password: values.firstTimePassword,
+          password: encryptPassword(values.firstTimePassword),
         })
       );
       setIsSubmitted(true);
@@ -62,7 +72,7 @@ export default function Login({ setLoggedInUser }) {
     const storedUser = localStorage.getItem(values.username);
     if (storedUser) {
       const userData = JSON.parse(storedUser);
-      if (userData.password === values.password) {
+      if (decryptPassword(userData.password) === values.password) {
         setLoggedInUser(values.username);
         setIsSignedIn(true);
       } else {
